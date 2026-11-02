@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish for Healthcare · Capítulo 7 · Terminología médica: cognados, especialidades y pronunciación</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* SPANISH FOR HEALTHCARE WORKERS · CAPÍTULO 7 · MEDICAL TERMINOLOGY */
+:root{
+  --navy:#1B2E4F; --navy-light:#2E4977;
+  --terracotta:#C45D3A; --terracotta-light:#E0876A;
+  --gold:#D4A24C; --gold-light:#EBC373;
+  --sage:#6E8C5F; --sage-light:#9CB590;
+  --cream:#FBF7EE; --cream-dark:#F0E9D8;
+  --text:#1a1a1a; --text-light:#444; --text-hint:#666;
+  --soft-shadow:0 4px 16px rgba(27,46,79,0.08);
+  --tile-shadow:0 2px 8px rgba(27,46,79,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Source Sans 3','Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.55;font-size:16px;min-height:100vh;}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;z-index:9999;text-decoration:none;}
+.skip-link:focus{left:8px;top:8px;}
+*:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
+.app{max-width:1200px;margin:0 auto;padding:0 20px 64px;position:relative;}
+.app::before{content:'4';position:fixed;top:18px;right:24px;z-index:0;font-family:'Playfair Display',serif;font-size:9rem;font-weight:800;color:var(--navy);opacity:0.04;pointer-events:none;line-height:1;}
+
+.chap-head{margin-top:36px;padding:32px 36px;border-radius:18px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.chap-head::after{content:'';position:absolute;right:-40px;bottom:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(212,162,76,0.25),transparent 70%);}
+.header-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;background:rgba(212,162,76,0.22);color:var(--gold-light);padding:5px 12px;border-radius:20px;margin-bottom:10px;}
+.header-title{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;line-height:1.15;margin-bottom:6px;}
+.header-subtitle{display:block;font-family:'Space Mono',monospace;font-size:0.85rem;letter-spacing:0.1em;color:var(--gold-light);text-transform:uppercase;}
+
+.prog-bar{height:8px;background:var(--cream-dark);border-radius:4px;margin:6px 0 0;overflow:hidden;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--terracotta),var(--gold));width:0%;transition:width 0.6s ease-out;}
+.completion-wrap{margin:22px 0 20px;}
+.completion-top{display:flex;align-items:center;gap:12px;}
+.completion-label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-hint);}
+.completion-score{margin-left:auto;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;color:var(--sage);background:rgba(110,140,95,0.14);padding:4px 12px;border-radius:20px;white-space:nowrap;}
+.completion-pct{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--terracotta);margin-left:14px;}
+.completion-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.legend-pill{font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;background:var(--cream-dark);color:var(--text-light);border:1px solid transparent;cursor:pointer;transition:all 0.2s;}
+.legend-pill:hover{background:#e6d9c2;color:var(--navy);}
+.legend-pill.done{background:rgba(110,140,95,0.18);border-color:var(--sage);color:var(--sage);}
+
+.submit-bar{background:var(--cream-dark);border-radius:12px;padding:14px 18px;margin-bottom:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.submit-bar label{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-light);}
+#studentName{flex:1;min-width:210px;border:2px solid #e2d5bd;border-radius:8px;background:#fff;padding:9px 13px;font-family:inherit;font-size:0.94rem;color:var(--navy);}
+#studentName:focus{outline:none;border-color:var(--gold);}
+.btn-download{background:var(--terracotta);color:#fff;border:none;border-radius:8px;padding:10px 20px;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;transition:background 0.2s,transform 0.2s;}
+.btn-download:hover{background:var(--terracotta-light);transform:translateY(-1px);}
+.submit-hint{width:100%;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);letter-spacing:0.04em;}
+
+.quiz-item{background:var(--cream);border-radius:12px;padding:16px 18px;margin-bottom:14px;border-left:4px solid var(--sage);}
+.quiz-item.correct{background:#eef6ea;border-left-color:var(--sage);}
+.quiz-item.wrong{background:#fbeceb;border-left-color:var(--terracotta);}
+.quiz-q{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:2px;}
+.quiz-q .qnum{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);font-weight:400;margin-right:6px;}
+.quiz-gloss{font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-bottom:12px;}
+.quiz-options{display:grid;gap:7px;}
+.quiz-opt{display:flex;align-items:flex-start;gap:10px;background:#fff;border:2px solid var(--cream-dark);border-radius:9px;padding:9px 13px;font-size:0.88rem;cursor:pointer;text-align:left;font-family:inherit;color:var(--text);width:100%;transition:border-color 0.2s,background 0.2s;}
+.quiz-opt:hover{border-color:var(--sage-light);background:#fbfaf6;}
+.quiz-opt.selected{border-color:var(--navy);background:#f3f5fa;}
+.quiz-opt.is-correct{border-color:var(--sage);background:#eef6ea;}
+.quiz-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;}
+.quiz-opt .letter{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);flex-shrink:0;margin-top:2px;}
+.quiz-explain{font-size:0.84rem;margin-top:10px;padding:10px 13px;border-radius:8px;background:#fff;border-left:3px solid var(--gold);display:none;}
+.quiz-explain.show{display:block;}
+
+.task-input{width:100%;border:none;border-bottom:2px solid var(--cream-dark);background:transparent;font-family:inherit;font-size:0.92rem;color:var(--navy);padding:5px 6px;}
+.task-input:focus{outline:none;border-bottom-color:var(--gold);}
+.task-fb{font-family:'Space Mono',monospace;font-size:0.66rem;margin-top:6px;display:none;}
+.task-fb.show{display:block;}
+.task-fb.ok{color:var(--sage);}
+.task-fb.ng{color:var(--terracotta);}
+
+.nav{display:flex;gap:4px;flex-wrap:wrap;background:#fff;padding:6px;border-radius:14px;box-shadow:var(--tile-shadow);margin-bottom:24px;}
+.tab{flex:1 1 auto;min-width:110px;padding:12px 14px;background:transparent;border:none;border-radius:10px;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;font-weight:600;color:var(--text-light);cursor:pointer;transition:all 0.18s ease;min-height:44px;}
+.tab:hover{background:var(--cream-dark);color:var(--navy);}
+.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 6px rgba(27,46,79,0.25);}
+
+.sec{display:none;animation:fadein 0.3s ease;}
+.sec.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.sec-sub{font-family:'Space Mono',monospace;font-size:0.78rem;letter-spacing:0.12em;color:var(--terracotta);text-transform:uppercase;margin-bottom:22px;}
+
+.week-hero{background:#fff;padding:26px 30px;border-radius:14px;margin-bottom:24px;box-shadow:var(--tile-shadow);border-left:5px solid var(--terracotta);}
+.week-hero h1{font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--navy);margin-bottom:8px;}
+.week-hero p{font-size:0.97rem;color:var(--text-light);margin-bottom:14px;}
+.topic-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.chip{display:inline-block;padding:5px 11px;background:var(--cream-dark);color:var(--navy);border-radius:14px;font-size:0.78rem;font-weight:600;font-family:'Space Mono',monospace;letter-spacing:0.02em;}
+
+.ch-intro{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.ch-intro::before{content:'';position:absolute;left:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(196,93,58,0.25),transparent 70%);}
+.ch-intro .label{position:relative;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.ch-intro h2{position:relative;font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:10px;color:#fff;}
+.ch-intro p{position:relative;font-size:0.95rem;line-height:1.6;color:rgba(255,255,255,0.95);}
+
+.card{background:#fff;padding:22px 26px;border-radius:14px;margin-bottom:18px;box-shadow:var(--tile-shadow);}
+.card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.card-title .pill{font-family:'Space Mono',monospace;font-size:0.65rem;background:var(--gold);color:#fff;padding:3px 9px;border-radius:12px;letter-spacing:0.1em;}
+
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.obj{background:var(--cream);padding:14px 16px;border-radius:10px;border-left:3px solid var(--sage);display:flex;gap:11px;align-items:flex-start;}
+.obj-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;}
+.obj-text{font-size:0.93rem;color:var(--text);line-height:1.45;}
+
+.vocab-hint{text-align:center;font-size:0.82rem;color:var(--text-hint);font-style:italic;margin-bottom:14px;}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px;}
+.vocab-card{perspective:1000px;height:118px;cursor:pointer;}
+.vocab-card-inner{position:relative;width:100%;height:100%;transition:transform 0.6s;transform-style:preserve-3d;}
+.vocab-card.flipped .vocab-card-inner{transform:rotateY(180deg);}
+.vocab-front,.vocab-back{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;border-radius:11px;text-align:center;box-shadow:var(--tile-shadow);}
+.vocab-front{background:#fff;border:2px solid var(--cream-dark);font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:0.98rem;}
+.vocab-front small{display:block;font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--text-hint);font-weight:400;margin-top:5px;letter-spacing:0.04em;}
+.vocab-back{background:linear-gradient(135deg,var(--terracotta),var(--terracotta-light));color:#fff;transform:rotateY(180deg);font-size:0.92rem;font-weight:600;}
+.vocab-ex{display:block;font-size:0.74rem;font-weight:400;font-style:italic;margin-top:6px;opacity:0.92;padding:0 18px;}
+.vocab-sound{position:absolute;top:6px;right:9px;font-size:0.75rem;opacity:0.55;}
+.vocab-replay{position:absolute;bottom:6px;right:8px;background:rgba(255,255,255,0.22);border:none;border-radius:50%;width:30px;height:30px;font-size:0.85rem;cursor:pointer;color:#fff;line-height:30px;padding:0;}
+.vocab-replay:hover,.vocab-replay:focus-visible{background:rgba(255,255,255,0.4);outline:2px solid #fff;}
+.vocab-card:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:12px;}
+.vocab-card.conn-card .vocab-front{border-color:var(--sage-light);color:var(--sage);}
+.vocab-card.conn-card .vocab-back{background:linear-gradient(135deg,var(--sage),#5A7350);}
+
+.gbox{background:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--tile-shadow);border-top:4px solid var(--terracotta);}
+.gbox.alt{border-top-color:var(--sage);}
+.gbox.alt2{border-top-color:var(--gold);}
+.gbox h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.gbox h3 .num{font-family:'Space Mono',monospace;font-size:0.7rem;background:var(--terracotta);color:#fff;padding:4px 10px;border-radius:11px;letter-spacing:0.1em;}
+.gbox.alt h3 .num{background:var(--sage);}
+.gbox.alt2 h3 .num{background:var(--gold);color:var(--navy);}
+.gbox .sub{font-size:0.9rem;color:var(--text-hint);margin-bottom:16px;font-style:italic;}
+
+.conj-table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(27,46,79,0.05);}
+.conj-table th,.conj-table td{padding:9px 13px;text-align:left;font-size:0.9rem;border-bottom:1px solid var(--cream-dark);}
+.conj-table th{background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:700;}
+.conj-table td .pn{color:var(--text-hint);}
+.conj-table td .fm{color:var(--terracotta);font-weight:700;font-style:italic;}
+.conj-table .accent{color:var(--terracotta);font-weight:700;}
+.conj-table tr:last-child td{border-bottom:none;}
+
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0;}
+@media(max-width:740px){.three-col{grid-template-columns:1fr;}}
+.col-card{background:var(--cream);padding:16px 18px;border-radius:10px;border-top:4px solid var(--terracotta);}
+.col-card.gd{border-top-color:var(--gold);}
+.col-card.sg{border-top-color:var(--sage);}
+.col-card h4{font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--navy);margin-bottom:4px;}
+.col-card .meaning{font-family:'Space Mono',monospace;font-size:0.68rem;color:var(--text-hint);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;}
+.col-card .ex{font-style:italic;font-size:0.85rem;color:var(--text);background:#fff;padding:7px 10px;border-radius:6px;margin-bottom:5px;}
+.col-card .ex strong{color:var(--terracotta);font-style:normal;}
+.col-card.gd .ex strong{color:#A07A2D;}
+.col-card.sg .ex strong{color:var(--sage);}
+
+.ex-box{background:var(--cream);border-left:3px solid var(--sage);padding:12px 16px;border-radius:8px;margin:14px 0;}
+.ex-box p{font-size:0.9rem;color:var(--text);margin:4px 0;}
+.ex-box em{color:var(--text-hint);font-style:italic;}
+.ojo{background:#FFF6F0;border-left:4px solid var(--terracotta);padding:14px 18px;border-radius:8px;margin:16px 0;}
+.ojo-title{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--terracotta);letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;}
+.ojo p{font-size:0.92rem;color:var(--text);line-height:1.55;}
+.ojo em{color:var(--terracotta);font-style:italic;font-weight:600;}
+
+/* Alphabet grid */
+.alpha-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin:14px 0;}
+.alpha-cell{background:var(--cream);border-radius:8px;padding:9px 6px;text-align:center;border:1px solid var(--cream-dark);}
+.alpha-cell .ltr{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--navy);display:block;}
+.alpha-cell .nm{font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--terracotta);letter-spacing:0.04em;display:block;margin-top:2px;}
+.vowel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0;}
+.vowel-cell{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;border-radius:10px;padding:14px 10px;text-align:center;}
+.vowel-cell .v{font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;display:block;line-height:1;}
+.vowel-cell .s{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--gold-light);display:block;margin-top:6px;letter-spacing:0.06em;}
+.vowel-cell .w{font-size:0.8rem;color:rgba(255,255,255,0.9);display:block;margin-top:4px;font-style:italic;}
+
+.ex-item{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--cream-dark);font-size:0.97rem;}
+.ex-item:last-of-type{border-bottom:none;}
+.ex-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:0.78rem;font-weight:700;}
+.ex-text{flex:1;line-height:1.9;color:var(--text);}
+.ex-hint{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--terracotta);margin-left:4px;}
+.blk{display:inline-block;width:120px;padding:6px 10px;border:2px solid var(--cream-dark);border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:0.95rem;color:var(--navy);background:#fff;outline:none;transition:border-color 0.15s;}
+.blk.wide{width:170px;}
+.blk:focus{border-color:var(--gold);}
+.blk.ok{border-color:var(--sage);background:#F4F8F0;color:#3F5C32;}
+.blk.ng{border-color:var(--terracotta);background:#FFF0EA;color:#8E3A1F;}
+
+.chk-btn,.rst-btn,.toggle-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-family:'Source Sans 3',sans-serif;font-size:0.92rem;font-weight:700;cursor:pointer;transition:all 0.15s;min-height:42px;margin-top:14px;}
+.chk-btn{background:var(--navy);color:#fff;}
+.chk-btn:hover{background:var(--navy-light);}
+.rst-btn{background:#fff;color:var(--navy);border:2px solid var(--cream-dark);margin-left:6px;}
+.rst-btn:hover{border-color:var(--navy);}
+.toggle-btn{background:var(--gold);color:var(--navy);margin-left:6px;}
+.toggle-btn:hover{background:var(--gold-light);}
+.res-msg{margin-top:12px;font-size:0.93rem;font-weight:700;min-height:22px;}
+.res-msg.ok{color:#3F5C32;}
+.res-msg.ng{color:#8E3A1F;}
+
+.word-bank{background:var(--cream);padding:11px 14px;border-radius:8px;margin-bottom:14px;font-size:0.88rem;}
+.word-bank-label{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+.word-bank-words span{display:inline-block;background:#fff;padding:3px 9px;border-radius:11px;margin:2px 3px;font-size:0.84rem;border:1px solid var(--cream-dark);color:var(--navy);font-weight:700;}
+
+/* Matching */
+.match-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.match-col-label{font-family:'Space Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-hint);margin-bottom:6px;}
+.mi{padding:11px 13px;border:2px solid var(--cream-dark);border-radius:9px;cursor:pointer;font-size:0.86rem;background:#fff;transition:all 0.12s;line-height:1.4;margin-bottom:7px;color:var(--text);}
+.mi:hover{border-color:var(--sage-light);}
+.mi.sel{border-color:var(--navy);background:#f3f5fa;color:var(--navy);}
+.mi.done{border-color:var(--sage);background:#eef6ea;color:#3F5C32;pointer-events:none;opacity:0.75;}
+.mi.bad{border-color:var(--terracotta);background:#fbeceb;}
+
+/* Conjugation game */
+.game-wrap{background:var(--cream);border-radius:14px;padding:22px;text-align:center;}
+.game-scorebar{display:flex;justify-content:center;gap:22px;margin-bottom:16px;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-hint);}
+.game-scorebar b{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--terracotta);margin-top:2px;}
+.game-prompt{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);margin:10px 0 4px;}
+.game-sub{font-size:0.85rem;color:var(--text-hint);font-style:italic;margin-bottom:18px;}
+.game-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin:0 auto;}
+@media(max-width:520px){.game-opts{grid-template-columns:1fr;}}
+.game-opt{background:#fff;border:2px solid var(--cream-dark);border-radius:10px;padding:14px 10px;font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);cursor:pointer;transition:all 0.12s;}
+.game-opt:hover{border-color:var(--sage-light);transform:translateY(-2px);}
+.game-opt.is-correct{border-color:var(--sage);background:#eef6ea;color:#3F5C32;}
+.game-opt.is-wrong{border-color:var(--terracotta);background:#fbeceb;color:#8E3A1F;}
+.game-feedback{min-height:22px;margin-top:14px;font-weight:700;font-size:0.95rem;}
+.game-feedback.ok{color:#3F5C32;}
+.game-feedback.ng{color:#8E3A1F;}
+.game-done{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);}
+
+.cult-card{background:linear-gradient(135deg,var(--sage) 0%,#5A7350 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:18px;box-shadow:var(--soft-shadow);}
+.cult-card .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px;}
+.cult-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px;color:#fff;}
+.cult-card p{font-size:0.95rem;line-height:1.65;color:rgba(255,255,255,0.95);}
+.cult-card .fact-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.cult-card .fact-pills span{background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:14px;font-size:0.82rem;font-weight:600;}
+
+.footer{margin-top:36px;padding:20px;text-align:center;font-family:'Space Mono',monospace;font-size:0.76rem;color:var(--text-hint);letter-spacing:0.05em;}
+
+@media(max-width:600px){
+  .chap-head{padding:24px 22px;}
+  .header-title{font-size:1.7rem;}
+  .gbox,.card,.cult-card,.ch-intro{padding:18px 20px;}
+  .three-col{grid-template-columns:1fr;}
+  .ex-item{flex-wrap:wrap;}
+}
+
+/* ── Shared additions (dialogue, pod, formula) ── */
+.dlg{background:var(--cream);border-radius:10px;padding:14px 18px;margin:14px 0;}
+.dlg p{font-size:0.93rem;margin:6px 0;line-height:1.5;}
+.dlg .who{display:inline-block;min-width:92px;font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--terracotta);font-weight:700;}
+.dlg .who.pt{color:var(--sage);}
+.dlg .en{display:block;font-size:0.8rem;color:var(--text-hint);font-style:italic;margin-left:96px;}
+.pod-hero{background:linear-gradient(135deg,#9B2C2C 0%,#B84444 100%);color:#fff;padding:24px 28px;border-radius:14px;margin-bottom:22px;box-shadow:var(--soft-shadow);position:relative;overflow:hidden;}
+.pod-hero::after{content:'🩹';position:absolute;right:22px;bottom:6px;font-size:4.5rem;opacity:0.22;}
+.pod-hero .label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;}
+.pod-hero h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:10px;color:#fff;}
+.pod-hero p{font-size:0.95rem;line-height:1.6;color:rgba(255,255,255,0.95);max-width:760px;}
+.vocab-card.pod-card .vocab-front{border-color:#E3B2B2;color:#9B2C2C;}
+.vocab-card.pod-card .vocab-back{background:linear-gradient(135deg,#9B2C2C,#B84444);}
+.tab.pod-tab{color:#9B2C2C;}
+.tab.pod-tab.active{background:#9B2C2C;color:#fff;}
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0;font-size:0.95rem;}
+.formula span{background:var(--cream);border:1px solid var(--cream-dark);border-radius:8px;padding:6px 11px;font-weight:600;color:var(--navy);}
+.formula span.arrow{background:none;border:none;color:var(--terracotta);font-weight:700;padding:0 2px;}
+.formula span.res{background:var(--terracotta);border-color:var(--terracotta);color:#fff;}
+.tts-note{font-size:0.78rem;color:var(--text-hint);text-align:center;margin-top:-6px;margin-bottom:14px;}
+/* ── Capítulo 3 additions ── */
+.play-btn{display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#fff;border:none;border-radius:16px;padding:5px 12px;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.04em;cursor:pointer;margin-right:8px;vertical-align:middle;}
+.play-btn:hover{background:var(--navy-light);}
+.alpha-cell.num-cell{cursor:pointer;border:1px solid var(--cream-dark);font-family:inherit;transition:all 0.12s;}
+.alpha-cell.num-cell:hover{border-color:var(--gold);background:#fff;transform:translateY(-1px);}
+.alpha-cell.num-cell .nm{text-transform:none;}
+/* ── Capítulo 4 additions ── */
+.tab.rev-tab{color:var(--sage);}
+.tab.rev-tab.active{background:var(--sage);color:#fff;}
+.body-wrap{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:20px;align-items:start;margin:10px 0;}
+@media(max-width:700px){.body-wrap{grid-template-columns:1fr;}}
+.body-fig{background:var(--cream);border-radius:12px;padding:10px;}
+.body-fig svg{width:100%;height:auto;display:block;}
+.body-fig .bp{fill:#E9DCC4;stroke:#CDB896;stroke-width:2;}
+.body-fig .hs{cursor:pointer;}
+.body-fig .hs circle{fill:var(--terracotta);stroke:#fff;stroke-width:2;transition:fill 0.15s;}
+.body-fig .hs:hover circle,.body-fig .hs:focus circle,.body-fig .hs.on circle{fill:var(--navy);}
+.body-fig .hs text{fill:#fff;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;pointer-events:none;}
+.body-fig .hs:focus{outline:none;}
+.body-label{background:var(--navy);color:#fff;border-radius:12px;padding:16px 18px;margin-bottom:12px;display:flex;flex-direction:column;gap:2px;}
+.body-label .bl-num{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--gold-light);letter-spacing:0.1em;}
+.body-label .bl-word{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;}
+.body-label .bl-en{font-size:0.9rem;color:rgba(255,255,255,0.8);font-style:italic;}
+
+/* ═══ Capítulo 6 additions ═══ */
+.app::before{content:'6';}
+.tab.com-tab{color:#3F7C85;}
+.tab.com-tab.active{background:#3F7C85;color:#fff;}
+.pod-hero::after{content:'🩺';}
+.play-btn.mini{padding:2px 8px;font-size:0.62rem;margin:0 0 0 6px;}
+
+/* map */
+.map-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:680px;margin:0 auto;}
+@media(max-width:700px){.map-wrap{grid-template-columns:1fr;}}
+.map-floor{background:var(--cream);border-radius:12px;padding:10px;}
+.map-cap{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:6px;text-align:center;}
+.map-floor svg{width:100%;height:auto;display:block;}
+.map-floor .hall{fill:#E9DCC4;}
+.map-floor .room rect{fill:#fff;stroke:var(--navy);stroke-width:2;transition:fill 0.15s;}
+.map-floor .room{cursor:pointer;}
+.map-floor .room:hover rect,.map-floor .room:focus rect{fill:#FFF3D6;}
+.map-floor .room.on rect{fill:var(--gold-light);}
+.map-floor .room.ok rect{fill:#CFE3C6;}
+.map-floor .room.bad rect{fill:#F4C9BE;}
+.map-floor .room text{font-family:'Source Sans 3',sans-serif;font-size:12px;font-weight:700;fill:var(--navy);pointer-events:none;}
+.map-floor .room:focus{outline:none;}
+.map-floor .fixed rect{fill:var(--navy);stroke:var(--navy);}
+.map-floor .fixed text{fill:#fff;font-size:11px;font-weight:700;font-family:'Space Mono',monospace;}
+.map-floor .arrow-t{font-family:'Space Mono',monospace;font-size:10px;fill:#8a7a60;}
+.map-label{max-width:680px;margin:12px auto 0;background:var(--navy);color:#fff;border-radius:12px;padding:12px 18px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;}
+.map-label .ml-es{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;}
+.map-label .ml-en{font-size:0.92rem;color:rgba(255,255,255,0.8);font-style:italic;}
+.dir-box{background:var(--cream);border-radius:12px;padding:16px 18px;margin-bottom:12px;border-left:5px solid var(--gold);}
+.dir-top{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--text-hint);letter-spacing:0.06em;margin-bottom:8px;}
+.dir-text{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--navy);line-height:1.4;margin-bottom:10px;}
+.dir-btns{margin-bottom:6px;}
+select.sel{font-family:inherit;font-size:0.92rem;padding:4px 8px;border:2px solid var(--cream-dark);border-radius:8px;background:#fff;color:var(--navy);font-weight:600;}
+select.sel.ok{border-color:var(--sage);background:#F2F8EE;}
+select.sel.ng{border-color:var(--terracotta);background:#FCF0EE;}
+
+/* ordering */
+.ord-ans{min-height:52px;background:var(--cream);border:2px dashed var(--cream-dark);border-radius:10px;padding:8px;margin:10px 0;counter-reset:st;}
+.ord-ans:empty::before{content:'Your order appears here…';color:var(--text-hint);font-size:0.85rem;font-style:italic;padding:6px;display:block;}
+.ord-pool{display:flex;flex-direction:column;gap:6px;}
+.ord-step{display:block;width:100%;text-align:left;background:#fff;border:2px solid var(--cream-dark);border-radius:9px;padding:9px 12px;font-family:inherit;font-size:0.92rem;color:var(--text);cursor:pointer;margin-bottom:6px;}
+.ord-step:hover{border-color:var(--gold);}
+.ord-ans .ord-step{counter-increment:st;}
+.ord-ans .ord-step::before{content:counter(st) '. ';font-weight:700;color:var(--terracotta);}
+.ord-ans .ord-step.ok{border-color:var(--sage);background:#F2F8EE;}
+.ord-ans .ord-step.ng{border-color:var(--terracotta);background:#FCF0EE;}
+
+/* intake form */
+.intake{border:2px solid var(--navy);border-radius:12px;overflow:hidden;margin:14px 0;}
+.intake-head{background:var(--navy);color:#fff;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;padding:10px 14px;}
+.intake-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;padding:14px;}
+@media(max-width:620px){.intake-grid{grid-template-columns:1fr;}}
+.intake-grid label{font-size:0.78rem;font-weight:700;color:var(--text-hint);text-transform:uppercase;letter-spacing:0.04em;display:flex;flex-direction:column;gap:3px;}
+.intake-grid .blk{width:100%;min-width:0;text-transform:none;font-size:0.95rem;}
+
+/* reading */
+.flyer{border:2px solid var(--sage);border-radius:14px;overflow:hidden;margin-bottom:12px;background:#fff;}
+.flyer-head{background:linear-gradient(135deg,var(--sage),#5A7350);color:#fff;padding:16px 20px;}
+.flyer-name{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;}
+.flyer-tag{font-size:0.9rem;opacity:0.95;}
+.flyer-body{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;padding:14px 20px;}
+@media(max-width:620px){.flyer-body{grid-template-columns:1fr;}}
+.flyer-col h4{font-family:'Space Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy);margin:10px 0 4px;}
+.flyer-col p{font-size:0.94rem;line-height:1.55;}
+.flyer-foot{background:#FCF0EE;color:#8A3A22;font-weight:700;font-size:0.9rem;padding:10px 20px;border-top:1px solid #F0D2C8;}
+.article{background:#fff;border:1px solid var(--cream-dark);border-radius:12px;padding:18px 22px;margin-bottom:16px;}
+.article p{font-size:0.98rem;line-height:1.7;margin-bottom:12px;}
+.article .src{font-size:0.75rem;color:var(--text-hint);font-style:italic;margin:0;}
+.gl{border-bottom:2px dotted var(--terracotta);cursor:help;position:relative;}
+.gl.light{border-bottom-color:rgba(255,255,255,0.8);}
+.gl.on::after{content:attr(data-en);position:absolute;left:50%;bottom:125%;transform:translateX(-50%);background:var(--navy);color:#fff;font-size:0.78rem;font-style:italic;font-weight:600;white-space:nowrap;padding:4px 9px;border-radius:6px;z-index:5;box-shadow:var(--soft-shadow);}
+.real-note{font-size:0.84rem;color:var(--text-light);background:#EEF5F6;border-left:4px solid #3F7C85;padding:9px 13px;border-radius:6px;margin:8px 0 16px;}
+
+/* data bars */
+.bar-group{margin-bottom:16px;}
+.bar-title{font-weight:700;color:var(--navy);font-size:0.95rem;margin-bottom:6px;}
+.bar-row{display:grid;grid-template-columns:130px 1fr 56px;align-items:center;gap:10px;margin-bottom:5px;cursor:pointer;}
+.bar-row .lbl{font-size:0.84rem;color:var(--text-light);}
+.bar-track{background:var(--cream-dark);border-radius:6px;height:20px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:6px;width:0;transition:width 1s ease-out;}
+.bar-row .val{font-family:'Space Mono',monospace;font-weight:700;font-size:0.85rem;color:var(--navy);}
+.refl{margin-bottom:14px;}
+.refl label{display:block;font-weight:700;color:var(--navy);font-size:0.92rem;margin-bottom:6px;}
+.refl textarea{width:100%;border:2px solid var(--cream-dark);border-radius:10px;padding:10px 12px;font-family:inherit;font-size:0.92rem;resize:vertical;}
+.refl textarea:focus{outline:none;border-color:var(--gold);}
+.src-list{padding-left:20px;font-size:0.9rem;line-height:1.8;}
+.src-list a{color:var(--navy);}
+
+/* sorting */
+.sort-pool{display:flex;flex-wrap:wrap;gap:8px;min-height:44px;background:var(--cream);border-radius:10px;padding:10px;margin-bottom:12px;}
+.sort-card{background:#fff;border:2px solid var(--cream-dark);border-radius:9px;padding:7px 11px;font-family:inherit;font-size:0.86rem;cursor:pointer;color:var(--text);text-align:left;}
+.sort-card.sel{border-color:var(--navy);background:#EEF2F9;box-shadow:0 0 0 2px rgba(27,46,79,0.15);}
+.sort-card.ok{border-color:var(--sage);background:#F2F8EE;}
+.sort-card.ng{border-color:var(--terracotta);background:#FCF0EE;}
+.sort-bins{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px;}
+@media(max-width:700px){.sort-bins{grid-template-columns:1fr 1fr;}}
+.sort-bin{border:2px dashed var(--navy-light);border-radius:12px;padding:8px;min-height:90px;background:#fff;cursor:pointer;display:flex;flex-direction:column;gap:6px;}
+.sort-bin:hover{background:#FBF7EE;}
+.sort-bin h5{font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--terracotta);text-align:center;}
+
+/* sentence builder */
+.bld{margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--cream-dark);}
+.bld-q{font-size:0.92rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.bld-q span{font-weight:400;color:var(--text-hint);font-style:italic;}
+.bld-ans{min-height:40px;background:var(--cream);border-radius:8px;padding:6px;display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px;border:2px solid transparent;}
+.bld-ans.ok{border-color:var(--sage);background:#F2F8EE;}
+.bld-ans.ng{border-color:var(--terracotta);background:#FCF0EE;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;}
+.tile-w{background:#fff;border:2px solid var(--navy);color:var(--navy);border-radius:8px;padding:5px 10px;font-family:inherit;font-size:0.9rem;font-weight:600;cursor:pointer;}
+.bld-ans .tile-w{background:var(--navy);color:#fff;}
+.bld-fb{font-size:0.82rem;margin-top:4px;}
+
+/* ═══ Capítulo 7 additions ═══ */
+.app::before{content:'7';}
+.pod-hero::after{content:'🤰';}
+.tab.pr-tab{color:var(--terracotta);}
+.tab.pr-tab.active{background:var(--terracotta);color:#fff;}
+.sort-bins.two{grid-template-columns:1fr 1fr;}
+@media(max-width:700px){.sort-bins.two{grid-template-columns:1fr;}}
+.sort-bin h5 small{display:block;font-size:0.62rem;color:var(--text-hint);text-transform:none;letter-spacing:0;font-weight:400;margin-top:2px;}
+/* writing */
+.case-card{background:#FFF7E6;border-radius:12px;padding:14px 18px;border:1px solid #F0DDB3;}
+.case-head{font-family:'Space Mono',monospace;font-size:0.74rem;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.case-card ul{margin-left:18px;font-size:0.92rem;line-height:1.6;}
+.term-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+.term-chips span{font-size:0.78rem;font-weight:700;padding:4px 10px;border-radius:14px;background:var(--cream-dark);color:var(--text-hint);transition:all 0.2s;}
+.term-chips span.on{background:#dcebd3;color:#3F5C32;}
+.disc-box{width:100%;border:2px solid var(--cream-dark);border-radius:12px;padding:14px;font-family:inherit;font-size:0.95rem;color:var(--navy);resize:vertical;min-height:150px;background:#fff;}
+.disc-box:focus{outline:none;border-color:var(--gold);}
+.wordcount{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--text-hint);margin-top:6px;}
+.wordcount.ok{color:var(--sage);font-weight:700;}
+/* word hunt */
+.hunt{background:#FFFDF8;border:1px solid var(--cream-dark);border-radius:12px;padding:18px 22px;font-size:1.04rem;line-height:2.1;}
+.hw{cursor:pointer;border-radius:4px;padding:1px 2px;transition:background 0.15s;}
+.hw:hover{background:var(--cream-dark);}
+.hw.found{background:rgba(110,140,95,0.3);color:#3F5C32;font-weight:700;}
+.hw.miss{background:rgba(196,93,58,0.3);}
+.hunt-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--text-light);flex-wrap:wrap;}
+/* stress game */
+.st-row{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;background:var(--cream);border-radius:10px;padding:10px 14px;margin-bottom:8px;border-left:4px solid transparent;}
+.st-row.ok{border-left-color:var(--sage);background:#eef6ea;}
+.st-row.ng{border-left-color:var(--terracotta);background:#fbeceb;}
+.st-num{font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--text-hint);}
+.st-syl{display:flex;flex-wrap:wrap;gap:5px;}
+.st-btn{min-width:46px;min-height:40px;border:2px solid var(--cream-dark);background:#fff;border-radius:8px;font-weight:700;font-size:1rem;color:var(--navy);cursor:pointer;padding:4px 10px;font-family:'Source Sans 3',sans-serif;}
+.st-btn:hover{border-color:var(--gold);}
+.st-btn.is-correct{border-color:var(--sage);background:#dcebd3;color:#3F5C32;text-transform:uppercase;}
+.st-btn.is-wrong{border-color:var(--terracotta);background:#f6d9d2;color:#8E3A1F;}
+.st-btn:disabled{cursor:default;}
+.st-en{font-size:0.82rem;color:var(--text-hint);font-style:italic;}
+@media(max-width:520px){.st-row{grid-template-columns:24px 1fr;}.st-en{grid-column:2;}}
+
+/* ══ PRONUNCIATION GAME ══ */
+.pr-wrap{background:#fff;border-radius:16px;box-shadow:var(--soft-shadow);padding:26px;margin-bottom:20px;}
+.pr-top{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px;}
+.pr-stat{background:var(--cream);border-radius:10px;padding:8px 14px;text-align:center;min-width:92px;}
+.pr-stat span{display:block;font-family:'Space Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-hint);}
+.pr-stat b{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--navy);}
+.pr-level{margin-left:auto;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--navy);color:#fff;padding:6px 12px;border-radius:20px;}
+.pr-dots{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:18px;}
+.pr-dot{width:26px;height:8px;border-radius:4px;background:var(--cream-dark);}
+.pr-dot.cur{background:var(--gold);}
+.pr-dot.done{background:var(--sage);}
+.pr-card{text-align:center;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);border:2px solid var(--cream-dark);border-radius:16px;padding:26px 18px 22px;}
+.pr-word{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:800;color:var(--navy);line-height:1.15;word-break:break-word;}
+.pr-en{font-style:italic;color:var(--text-hint);margin-top:6px;font-size:1rem;}
+.pr-tip{display:inline-block;margin-top:12px;background:#FFF6F0;border-left:4px solid var(--terracotta);border-radius:8px;padding:8px 14px;font-size:0.88rem;text-align:left;max-width:560px;}
+.pr-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px;}
+.pr-btn{display:inline-flex;align-items:center;gap:8px;border:none;border-radius:40px;padding:13px 24px;font-family:'Source Sans 3',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;min-height:50px;transition:transform 0.12s,background 0.15s;}
+.pr-btn:hover{transform:translateY(-1px);}
+.pr-btn:disabled{opacity:0.45;cursor:not-allowed;transform:none;}
+.pr-listen{background:#fff;color:var(--navy);border:2px solid var(--cream-dark);}
+.pr-mic{background:var(--terracotta);color:#fff;font-size:1.08rem;padding:14px 30px;}
+.pr-mic.rec{background:#B3261E;animation:prpulse 1.1s infinite;}
+@keyframes prpulse{0%{box-shadow:0 0 0 0 rgba(179,38,30,0.55);}70%{box-shadow:0 0 0 16px rgba(179,38,30,0);}100%{box-shadow:0 0 0 0 rgba(179,38,30,0);}}
+.pr-next{background:var(--sage);color:#fff;}
+.pr-result{margin-top:20px;display:none;}
+.pr-result.show{display:block;animation:fadein 0.3s ease;}
+.pr-meter{display:flex;align-items:center;gap:16px;justify-content:center;flex-wrap:wrap;}
+.pr-ring{width:110px;height:110px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--ring-c,#6E8C5F) calc(var(--p,0)*1%),var(--cream-dark) 0);position:relative;}
+.pr-ring::after{content:'';position:absolute;inset:11px;background:#fff;border-radius:50%;}
+.pr-ring b{position:relative;z-index:1;font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--navy);}
+.pr-msg{text-align:left;max-width:420px;}
+.pr-msg .pr-verdict{font-weight:800;font-size:1.15rem;}
+.pr-msg .pr-verdict.ok{color:#3F5C32;}
+.pr-msg .pr-verdict.ng{color:#8E3A1F;}
+.pr-heard{font-size:0.92rem;color:var(--text-light);margin-top:4px;}
+.pr-heard em{color:var(--navy);font-weight:700;font-style:normal;}
+.pr-threshold{font-family:'Space Mono',monospace;font-size:0.66rem;color:var(--text-hint);margin-top:6px;}
+.pr-words{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:14px;}
+.pr-words span{padding:4px 10px;border-radius:14px;font-weight:700;font-size:0.9rem;}
+.pr-words .hit{background:#dcebd3;color:#3F5C32;}
+.pr-words .miss{background:#f6d9d2;color:#8E3A1F;}
+.pr-interim{min-height:22px;margin-top:12px;font-size:0.9rem;color:var(--text-hint);font-style:italic;}
+.pr-warn{background:#FFF6F0;border:2px solid var(--terracotta-light);border-radius:12px;padding:14px 18px;font-size:0.92rem;margin-bottom:16px;display:none;}
+.pr-warn.show{display:block;}
+.pr-done{text-align:center;display:none;}
+.pr-done.show{display:block;animation:fadein 0.3s ease;}
+.pr-done h3{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--navy);}
+.pr-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.92rem;text-align:left;}
+.pr-table th{background:var(--navy);color:#fff;padding:8px 10px;font-family:'Space Mono',monospace;font-size:0.64rem;letter-spacing:0.08em;text-transform:uppercase;}
+.pr-table td{padding:8px 10px;border-bottom:1px solid var(--cream-dark);}
+.pr-stars{color:var(--gold);letter-spacing:2px;}
+@media(max-width:520px){.pr-wrap{padding:16px;}.pr-word{font-size:2rem;}.pr-level{margin-left:0;}}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="app">
+
+  <div class="chap-head">
+    <span class="header-badge">SPSCC · SPANISH FOR HEALTHCARE</span>
+    <span class="header-title">Capítulo 7 · Terminología médica</span>
+    <span class="header-subtitle">Medical Terminology · cognados, especialidades y pronunciación</span>
+  </div>
+
+  <div class="completion-wrap">
+    <div class="completion-top">
+      <span class="completion-label">Mi progreso · My progress</span>
+      <span class="completion-score" id="completionScore">★ 0% correcto</span>
+      <span class="completion-pct" id="completionPct">0%</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="pf" style="width:0%"></div></div>
+    <div class="completion-legend" id="completionLegend"></div>
+  </div>
+
+  <div class="submit-bar">
+    <label for="studentName">Nombre / Name</label>
+    <input id="studentName" type="text" placeholder="Type your full name here" autocomplete="name">
+    <button class="btn-download" onclick="downloadReport()">⬇ Download Report</button>
+    <span class="submit-hint">Enter your name, work through every tab (including 🎤 Pronunciación), then download your chapter report to turn in.</span>
+  </div>
+
+  <nav class="nav" aria-label="Chapter sections">
+    <button class="tab active" onclick="switchTab('ov',this)">Inicio</button>
+    <button class="tab" onclick="switchTab('vo',this)">Vocabulario</button>
+    <button class="tab" onclick="switchTab('gr',this)">Gramática</button>
+    <button class="tab" onclick="switchTab('ej',this)">Ejercicios</button>
+    <button class="tab" onclick="switchTab('lec',this)">📖 Lectura</button>
+    <button class="tab pr-tab" onclick="switchTab('pr',this)">🎤 Pronunciación</button>
+    <button class="tab" onclick="switchTab('ju',this)">Juegos</button>
+    <button class="tab pod-tab" onclick="switchTab('pod',this)">★ Pod · OB/GYN</button>
+  </nav>
+
+  <div id="main-content"></div>
+
+  <!-- ═══ INICIO ═══ -->
+  <section class="sec active" id="sec-ov">
+    <h2 class="sec-title">Capítulo 7 · Terminología médica</h2>
+    <p class="sec-sub">15+ términos médicos · especialidades · cognados y falsos amigos · pronunciación · hablar y escribir</p>
+
+    <div class="ch-intro">
+      <div class="label">¡Bienvenidos! · You already know more than you think</div>
+      <h2>Thousands of medical words are almost the same in English</h2>
+      <p><em>La diabetes, el colesterol, la infección, la cardiología, el diagnóstico.</em> Medical vocabulary is full of <strong>cognates</strong>, so you can recognize hundreds of terms right away. But a few <strong>false friends</strong> can cause real harm: a patient who says she is <em>embarazada</em> is not embarrassed, she is <strong>pregnant</strong>. This chapter teaches you the key terms, the specialties, the traps, how patients say things in everyday words, and how to <strong>pronounce</strong> long medical words so patients understand you. In the 🎤 Pronunciación tab, your microphone checks your pronunciation.</p>
+    </div>
+
+    <div class="week-hero">
+      <h1>What this chapter covers</h1>
+      <p>Six building blocks, two readings, a pronunciation game and the OB/GYN pod. Everything is graded automatically.</p>
+      <div class="topic-chips">
+        <span class="chip">15+ términos médicos</span>
+        <span class="chip">especialidades y especialistas</span>
+        <span class="chip">cognados: -ción, -logía, -itis</span>
+        <span class="chip">falsos amigos: constipado, embarazada, éxito</span>
+        <span class="chip">paciente vs. clínico</span>
+        <span class="chip">🎤 pronunciación</span>
+        <span class="chip">★ pod: ginecología y obstetricia</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Objetivos · By the end of this chapter you can <span class="pill">CAP 7</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text">Use <strong>15+ medical terms</strong> and their English equivalents: <em>la presión arterial, la diabetes, el colesterol, la radiografía…</em></span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text">Name <strong>specialties and specialists</strong>: <em>cardiología → el cardiólogo, pediatría → la pediatra</em>.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text">Recognize <strong>cognate patterns</strong> and avoid <strong>false friends</strong>: <em>constipado, embarazada, éxito, intoxicado</em>.</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">Switch between <strong>patient words and clinical words</strong>: <em>la presión alta = la hipertensión</em>.</span></div>
+        <div class="obj"><span class="obj-num">5</span><span class="obj-text"><strong>Pronounce</strong> key medical terms with the right stress: <em>car-dio-lo-GÍ-a, a-NÁ-li-sis</em>.</span></div>
+        <div class="obj"><span class="obj-num">★</span><span class="obj-text"><strong>Pod de especialidad:</strong> ask about pregnancy at a prenatal visit.</span></div>
+      </div>
+    </div>
+
+    <div class="cult-card">
+      <div class="label">Nota cultural · Two kinds of Spanish in one visit</div>
+      <h3>¿«Tengo azúcar» o «tengo diabetes»?</h3>
+      <p>Many patients don't use clinical words. A patient may say <em>tengo azúcar</em> or <em>tengo el azúcar alta</em> for diabetes, <em>la presión alta</em> for hypertension, <em>la regla</em> for menstruation, or <em>los rayos X</em> for an X-ray. Neither version is wrong: good health workers <strong>understand both</strong> and <strong>use the patient's words</strong> when they explain. In Spain, <em>estoy constipado</em> means "I have a cold"; in much of Latin America people say <em>estoy resfriado</em> or <em>tengo gripa / gripe</em>.</p>
+      <div class="fact-pills">
+        <span>tengo azúcar = tengo diabetes</span>
+        <span>la presión alta = la hipertensión</span>
+        <span>la regla = la menstruación</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VOCABULARIO ═══ -->
+  <section class="sec" id="sec-vo">
+    <h2 class="sec-title">Vocabulario · Capítulo 7</h2>
+    <p class="sec-sub">términos médicos · especialidades · falsos amigos</p>
+    <p class="vocab-hint">Tap any card to flip it: you'll see the translation and an example, and hear both 🔊. Listen carefully to where the stress falls in each long word.</p>
+    <p class="tts-note">Audio uses your device's Spanish voice. If you hear nothing, check your volume or try another browser.</p>
+    <div class="card">
+      <div class="card-title">Términos médicos <span class="pill">16 CARDS</span></div>
+      <div class="vocab-grid" id="fcTerms"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Especialidades <span class="pill">12 CARDS</span></div>
+      <div class="vocab-grid" id="fcSpec"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Falsos amigos · ¡cuidado! <span class="pill">10 CARDS</span></div>
+      <div class="vocab-grid" id="fcFalse"></div>
+    </div>
+  </section>
+
+  <!-- ═══ GRAMÁTICA ═══ -->
+  <section class="sec" id="sec-gr">
+    <h2 class="sec-title">Gramática · Capítulo 7</h2>
+    <p class="sec-sub">how medical words are built, the traps, and how to say them</p>
+
+    <div class="gbox">
+      <h3><span class="num">G1</span>Los cognados · patrones</h3>
+      <p class="sub">Learn the pattern once and you can guess dozens of words. Tap 🔊 to hear the Spanish.</p>
+      <table class="conj-table">
+        <thead><tr><th>English</th><th>Español</th><th>Ejemplos</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>-tion</td><td class="accent">-ción</td><td>infection → <em>la infección</em> · operation → <em>la operación</em></td><td><button type="button" class="play-btn" onclick="speak('la infección, la operación')">🔊</button></td></tr>
+          <tr><td>-ty</td><td class="accent">-dad</td><td>obesity → <em>la obesidad</em> · disability → <em>la discapacidad</em></td><td><button type="button" class="play-btn" onclick="speak('la obesidad, la discapacidad')">🔊</button></td></tr>
+          <tr><td>-logy</td><td class="accent">-logía</td><td>cardiology → <em>la cardiología</em> · neurology → <em>la neurología</em></td><td><button type="button" class="play-btn" onclick="speak('la cardiología, la neurología')">🔊</button></td></tr>
+          <tr><td>-itis</td><td class="accent">-itis</td><td>arthritis → <em>la artritis</em> · bronchitis → <em>la bronquitis</em></td><td><button type="button" class="play-btn" onclick="speak('la artritis, la bronquitis')">🔊</button></td></tr>
+          <tr><td>ph · th</td><td class="accent">f · t</td><td>pharmacy → <em>la farmacia</em> · therapy → <em>la terapia</em></td><td><button type="button" class="play-btn" onclick="speak('la farmacia, la terapia')">🔊</button></td></tr>
+          <tr><td>s + consonant</td><td class="accent">es-</td><td>stomach → <em>el estómago</em> · specialist → <em>el especialista</em></td><td><button type="button" class="play-btn" onclick="speak('el estómago, el especialista')">🔊</button></td></tr>
+          <tr><td>-ous</td><td class="accent">-oso</td><td>contagious → <em>contagioso</em> · nervous → <em>nervioso</em></td><td><button type="button" class="play-btn" onclick="speak('contagioso, nervioso')">🔊</button></td></tr>
+        </tbody>
+      </table>
+      <div class="ojo"><div class="ojo-title">¡OJO! · género</div><p>Words ending in <em>-ción</em>, <em>-dad</em> and <em>-itis</em> are feminine: <em>la infección, la artritis</em>. But many Greek words in <em>-ma</em> are masculine: <em><strong>el</strong> síntoma, <strong>el</strong> problema, <strong>el</strong> sistema</em>. And <em>el asma</em> takes <em>el</em> because it starts with a stressed <em>a</em>, but it is feminine: <em>el asma es <strong>crónica</strong></em>.</p></div>
+    </div>
+
+    <div class="gbox alt">
+      <h3><span class="num">G2</span>Especialidades y especialistas</h3>
+      <p class="sub">Most specialties in <em>-logía</em> make the specialist with <em>-ólogo / -óloga</em>. Watch the exceptions in <em>-iatra</em>.</p>
+      <table class="conj-table">
+        <thead><tr><th>Especialidad</th><th>Especialista</th><th>¿Qué trata?</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">la cardiología</td><td>el cardiólogo / la cardióloga</td><td>el corazón · heart</td></tr>
+          <tr><td class="accent">la dermatología</td><td>el dermatólogo / la dermatóloga</td><td>la piel · skin</td></tr>
+          <tr><td class="accent">la neurología</td><td>el neurólogo / la neuróloga</td><td>el cerebro y los nervios · brain and nerves</td></tr>
+          <tr><td class="accent">la oncología</td><td>el oncólogo / la oncóloga</td><td>el cáncer</td></tr>
+          <tr><td class="accent">la ginecología</td><td>el ginecólogo / la ginecóloga</td><td>la salud de la mujer · women's health</td></tr>
+          <tr><td class="accent">la pediatría</td><td>el / la <strong>pediatra</strong></td><td>los niños · children</td></tr>
+          <tr><td class="accent">la psiquiatría</td><td>el / la <strong>psiquiatra</strong></td><td>la salud mental · mental health</td></tr>
+          <tr><td class="accent">la radiología</td><td>el radiólogo / la radióloga</td><td>las radiografías · X-rays and imaging</td></tr>
+        </tbody>
+      </table>
+      <div class="formula"><span>cardio-</span><span class="arrow">+</span><span>-logía</span><span class="arrow">→</span><span>-ólogo/a</span><span class="res">Necesita ver al cardiólogo.</span></div>
+    </div>
+
+    <div class="gbox alt2">
+      <h3><span class="num">G3</span>Falsos amigos · false cognates</h3>
+      <p class="sub">They look like English words, but they mean something else. These are the ones that cause problems in clinics.</p>
+      <table class="conj-table">
+        <thead><tr><th>Palabra</th><th>Significa…</th><th>No significa…</th><th>Para decir eso:</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">embarazada</td><td>pregnant</td><td>embarrassed</td><td>avergonzado/a, apenado/a</td></tr>
+          <tr><td class="accent">constipado/a</td><td>stuffed up, has a cold</td><td>constipated</td><td>estreñido/a</td></tr>
+          <tr><td class="accent">el éxito</td><td>success</td><td>exit</td><td>la salida</td></tr>
+          <tr><td class="accent">intoxicado/a</td><td>poisoned, sick from something eaten or taken</td><td>drunk</td><td>borracho/a, ebrio/a</td></tr>
+          <tr><td class="accent">sensible</td><td>sensitive</td><td>sensible</td><td>sensato/a</td></tr>
+          <tr><td class="accent">la molestia</td><td>discomfort</td><td>molestation</td><td>el abuso</td></tr>
+          <tr><td class="accent">actualmente</td><td>currently</td><td>actually</td><td>en realidad</td></tr>
+          <tr><td class="accent">la receta</td><td>prescription (and recipe)</td><td>receipt</td><td>el recibo</td></tr>
+        </tbody>
+      </table>
+      <div class="ojo"><div class="ojo-title">¡OJO! · not just embarrassing</div><p>False friends are funny in class, but in a clinic they can be dangerous. Read about the word <em>intoxicado</em> in the 📖 Lectura tab. When a word seems strange, <strong>ask</strong>: <em>¿Qué quiere decir con «constipado»?</em> (What do you mean by…?)</p></div>
+    </div>
+
+    <div class="gbox">
+      <h3><span class="num">G4</span>Palabras del paciente y palabras clínicas</h3>
+      <p class="sub">Understand both. When you explain, use the patient's words; when you write the chart, use the clinical term.</p>
+      <table class="conj-table">
+        <thead><tr><th>El paciente dice…</th><th>El término clínico</th><th>English</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">la presión alta</td><td>la hipertensión</td><td>high blood pressure</td></tr>
+          <tr><td class="accent">el azúcar alta · tengo azúcar</td><td>la diabetes</td><td>diabetes</td></tr>
+          <tr><td class="accent">un ataque al corazón</td><td>un infarto</td><td>heart attack</td></tr>
+          <tr><td class="accent">la pulmonía</td><td>la neumonía</td><td>pneumonia</td></tr>
+          <tr><td class="accent">los rayos X</td><td>la radiografía</td><td>X-ray</td></tr>
+          <tr><td class="accent">la regla</td><td>la menstruación</td><td>period</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="gbox alt">
+      <h3><span class="num">G5</span>Pronunciación de términos médicos</h3>
+      <p class="sub">Long words are easy if you know where the stress goes. Tap a word to hear it; the stressed syllable is in CAPITALS.</p>
+      <div class="three-col">
+        <div class="col-card"><h4>-ÍA</h4><div class="meaning">the accent breaks the i + a</div><div class="ex"><button type="button" class="play-btn" onclick="speak('cardiología')">🔊</button> car·dio·lo·GÍ·a</div><div class="ex"><button type="button" class="play-btn" onclick="speak('radiografía')">🔊</button> ra·dio·gra·FÍ·a</div></div>
+        <div class="col-card gd"><h4>-CIÓN · -SIÓN</h4><div class="meaning">always stressed at the end</div><div class="ex"><button type="button" class="play-btn" onclick="speak('infección')">🔊</button> in·fec·CIÓN</div><div class="ex"><button type="button" class="play-btn" onclick="speak('hipertensión')">🔊</button> hi·per·ten·SIÓN</div></div>
+        <div class="col-card sg"><h4>ESDRÚJULAS</h4><div class="meaning">3rd from the end, always with an accent</div><div class="ex"><button type="button" class="play-btn" onclick="speak('análisis')">🔊</button> a·NÁ·li·sis</div><div class="ex"><button type="button" class="play-btn" onclick="speak('diagnóstico')">🔊</button> diag·NÓS·ti·co</div></div>
+      </div>
+      <div class="ex-box">
+        <p><strong>Sounds to watch:</strong> <em>h</em> is silent: <em>hipertensión, hemorragia</em> · <em>g</em> before e / i sounds like a strong h: <em>ginecología, cirugía</em> · <em>z</em> and <em>c</em> before e / i sound like s in Latin America: <em>embarazada, cáncer</em> · every vowel is short and clear: <em>diabetes</em> = di·a·BE·tes, never "die-a-beet-ees".</p>
+        <p><strong>No accent mark?</strong> Words ending in a vowel, <em>n</em> or <em>s</em> stress the second-to-last syllable: <em>diaBEtes, eXAmen</em>. Other endings stress the last syllable: <em>colesteROL, hospiTAL</em>. When a word breaks these rules, it carries an accent mark: <em>SÍntoma, inyecCIÓN, aNÁlisis</em>.</p>
+      </div>
+    </div>
+
+    <div class="gbox alt2">
+      <h3><span class="num">G6</span>Usar la terminología al hablar y escribir</h3>
+      <p class="sub">Five frames that turn a term into a useful sentence.</p>
+      <table class="conj-table">
+        <thead><tr><th>Estructura</th><th>Ejemplo</th></tr></thead>
+        <tbody>
+          <tr><td class="accent">tiene + condición</td><td>Tiene diabetes tipo 2. · Tiene la presión alta.</td></tr>
+          <tr><td class="accent">toma medicina para + condición</td><td>Toma medicina para el colesterol.</td></tr>
+          <tr><td class="accent">necesita ver a + especialista</td><td>Necesita ver al cardiólogo.</td></tr>
+          <tr><td class="accent">le vamos a hacer + prueba</td><td>Le vamos a hacer una radiografía.</td></tr>
+          <tr><td class="accent">¿Tiene antecedentes de…?</td><td>¿Tiene antecedentes de asma en la familia? <em>(family history of…)</em></td></tr>
+        </tbody>
+      </table>
+      <div class="formula"><span>Edad</span><span class="arrow">+</span><span>condiciones</span><span class="arrow">+</span><span>medicinas</span><span class="arrow">+</span><span>plan</span><span class="res">El paciente tiene 58 años. Tiene diabetes y la presión alta. Toma metformina. Necesita ver al cardiólogo.</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ EJERCICIOS ═══ -->
+  <section class="sec" id="sec-ej">
+    <h2 class="sec-title">Ejercicios · Práctica</h2>
+    <p class="sec-sub">Ejercicio 1 · 2 · 3 · 4 · 5 · 6</p>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 1 · Los cognados <span class="pill">8 ITEMS</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Use the patterns from G1 to write the Spanish word. Accents are optional here; articles are optional.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">infection → <input class="blk" id="e1_1" data-answer="infección|la infección" placeholder="___"> <span class="ex-hint">(-tion → -ción)</span></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">cardiology → <input class="blk" id="e1_2" data-answer="cardiología|la cardiología" placeholder="___"> <span class="ex-hint">(-logy → -logía)</span></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">arthritis → <input class="blk" id="e1_3" data-answer="artritis|la artritis" placeholder="___"> <span class="ex-hint">(th → t)</span></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">pharmacy → <input class="blk" id="e1_4" data-answer="farmacia|la farmacia" placeholder="___"> <span class="ex-hint">(ph → f)</span></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">specialist → <input class="blk" id="e1_5" data-answer="especialista|el especialista|la especialista" placeholder="___"> <span class="ex-hint">(s + consonant → es-)</span></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">obesity → <input class="blk" id="e1_6" data-answer="obesidad|la obesidad" placeholder="___"> <span class="ex-hint">(-ty → -dad)</span></span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">contagious → <input class="blk" id="e1_7" data-answer="contagioso|contagiosa" placeholder="___"> <span class="ex-hint">(-ous → -oso)</span></span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">therapy → <input class="blk" id="e1_8" data-answer="terapia|la terapia" placeholder="___"> <span class="ex-hint">(th → t, y → ia)</span></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e1_1,e1_2,e1_3,e1_4,e1_5,e1_6,e1_7,e1_8','rs1')">Reset</button>
+      <div class="res-msg" id="rs1" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 2 · ¿Qué especialista necesita? <span class="pill">8 ITEMS</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Write the specialist (no article). Accents are optional.</p>
+      <div class="word-bank"><span class="word-bank-label">Word Bank</span><span class="word-bank-words"><span>cardiólogo</span><span>dermatóloga</span><span>pediatra</span><span>oncólogo</span><span>neuróloga</span><span>ginecóloga</span><span>psiquiatra</span><span>radiólogo</span></span></div>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">Tiene un problema del corazón. Necesita ver al <input class="blk" id="e2_1" data-answer="cardiólogo" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">Tiene una infección en la piel. Necesita ver a la <input class="blk" id="e2_2" data-answer="dermatóloga" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">El bebé tiene fiebre. Necesita ver al <input class="blk" id="e2_3" data-answer="pediatra" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">Tiene cáncer de colon. Necesita ver al <input class="blk" id="e2_4" data-answer="oncólogo" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">Tiene dolores de cabeza muy fuertes y migrañas. Necesita ver a la <input class="blk" id="e2_5" data-answer="neuróloga" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">Está embarazada. Necesita ver a la <input class="blk" id="e2_6" data-answer="ginecóloga|obstetra" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">7</span><span class="ex-text">Tiene depresión y ansiedad. Necesita ver al <input class="blk" id="e2_7" data-answer="psiquiatra" placeholder="___">.</span></div>
+      <div class="ex-item"><span class="ex-num">8</span><span class="ex-text">El <input class="blk" id="e2_8" data-answer="radiólogo" placeholder="___"> lee la radiografía.</span></div>
+      <button class="chk-btn" onclick="checkBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6,e2_7,e2_8','rs2')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e2_1,e2_2,e2_3,e2_4,e2_5,e2_6,e2_7,e2_8','rs2')">Reset</button>
+      <div class="res-msg" id="rs2" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 3 · ¿Amigo o falso amigo? <span class="pill">8 ITEMS</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">Choose the word that fits the meaning. Careful: the English-looking word is not always right!</p>
+      <div id="falseCont"></div>
+      <button class="chk-btn" onclick="checkSelects('fa','rs3')">Check Answers</button>
+      <button class="rst-btn" onclick="resetSelects('fa','rs3')">Reset</button>
+      <div class="res-msg" id="rs3" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 4 · Del paciente a la historia clínica <span class="pill">6 ITEMS</span></div>
+      <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:14px;">The patient uses an everyday word. Write the clinical term for the chart. Accents are optional.</p>
+      <div class="ex-item"><span class="ex-num">1</span><span class="ex-text">«Tengo la presión alta.» → la <input class="blk" id="e4_1" data-answer="hipertensión" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">2</span><span class="ex-text">«Tengo el azúcar alta.» → la <input class="blk" id="e4_2" data-answer="diabetes" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">3</span><span class="ex-text">«Mi papá tuvo un ataque al corazón.» → un <input class="blk" id="e4_3" data-answer="infarto" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">4</span><span class="ex-text">«Mi hijo tiene pulmonía.» → la <input class="blk" id="e4_4" data-answer="neumonía" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">5</span><span class="ex-text">«Me sacaron rayos X.» → una <input class="blk" id="e4_5" data-answer="radiografía" placeholder="___"></span></div>
+      <div class="ex-item"><span class="ex-num">6</span><span class="ex-text">«No me baja la regla.» → la <input class="blk" id="e4_6" data-answer="menstruación" placeholder="___"></span></div>
+      <button class="chk-btn" onclick="checkBlanks('e4_1,e4_2,e4_3,e4_4,e4_5,e4_6','rs4')">Check Answers</button>
+      <button class="rst-btn" onclick="resetBlanks('e4_1,e4_2,e4_3,e4_4,e4_5,e4_6','rs4')">Reset</button>
+      <div class="res-msg" id="rs4" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 5 · Respuesta corta: use los términos <span class="pill">6 SITUACIONES</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Write a complete sentence in Spanish for each situation.</p>
+      <div id="shortCont"></div>
+      <button class="chk-btn" onclick="checkShort()">Check Answers</button>
+      <button class="rst-btn" onclick="resetShort()">Reset</button>
+      <div class="res-msg" id="rs7" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Ejercicio 6 · Escriba el informe del paciente <span class="pill">✍ ESCRITURA</span></div>
+      <div class="case-card">
+        <div class="case-head">📋 Chart notes (in English) · Don Héctor Ruiz, 64</div>
+        <ul>
+          <li>High blood pressure and type 2 diabetes. High cholesterol.</li>
+          <li>Meds: metformin, lisinopril. Allergic to penicillin.</li>
+          <li>Today: cough and fever for 4 days. Possible pneumonia.</li>
+          <li>Plan: blood test and chest X-ray today. See the cardiologist next month.</li>
+        </ul>
+      </div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin:12px 0 8px;">Write a short report in Spanish (at least <strong>40 words</strong>). Use the frames from G6. The chips light up when you use a medical term: use <strong>at least 6</strong>.</p>
+      <div class="term-chips" id="termChips"></div>
+      <textarea class="disc-box" id="report" placeholder="El paciente tiene 64 años. Tiene…"></textarea>
+      <div class="wordcount" id="wcount">0 palabras · 0 términos</div>
+    </div>
+  </section>
+
+  <!-- ═══ LECTURA ═══ -->
+  <section class="sec" id="sec-lec">
+    <h2 class="sec-title">📖 Lectura · Comprensión</h2>
+    <p class="sec-sub">un falso amigo con consecuencias · la consulta de doña Marta</p>
+    <p class="vocab-hint">Words with a dotted underline are <strong>tap-to-translate</strong>. Guess from context first! Tap 🔊 to hear a paragraph.</p>
+
+    <div class="card">
+      <div class="card-title">Lectura 1 · «Intoxicado»: una palabra, un gran error <span class="pill">REAL WORLD</span></div>
+      <div class="article">
+        <p id="ar1"><button type="button" class="play-btn mini" onclick="speakEl('ar1')">🔊</button> En un caso famoso en Estados Unidos, un joven llamado Willie Ramírez <span class="gl" tabindex="0" data-en="arrived">llegó</span> al hospital inconsciente. Su familia hablaba español y <span class="gl" tabindex="0" data-en="said">dijo</span> que Willie estaba <strong>«intoxicado»</strong>.</p>
+        <p id="ar2"><button type="button" class="play-btn mini" onclick="speakEl('ar2')">🔊</button> En español, «intoxicado» quiere decir que una persona está enferma por algo que <span class="gl" tabindex="0" data-en="ate">comió</span> o <span class="gl" tabindex="0" data-en="took / drank">tomó</span>, como una comida o un medicamento. Pero el personal del hospital entendió <em>intoxicated</em> en inglés: borracho o con drogas. No había un intérprete profesional.</p>
+        <p id="ar3"><button type="button" class="play-btn mini" onclick="speakEl('ar3')">🔊</button> Los médicos <span class="gl" tabindex="0" data-en="thought">pensaron</span> que era una <span class="gl" tabindex="0" data-en="overdose">sobredosis</span>. En realidad, Willie tenía una <span class="gl" tabindex="0" data-en="hemorrhage / bleeding">hemorragia</span> en el cerebro. Pasaron más de dos días sin llamar al neurocirujano. Al final, Willie <span class="gl" tabindex="0" data-en="ended up">quedó</span> <span class="gl" tabindex="0" data-en="quadriplegic">cuadripléjico</span>: no puede mover los brazos ni las piernas.</p>
+        <p id="ar4"><button type="button" class="play-btn mini" onclick="speakEl('ar4')">🔊</button> Hoy, este caso se usa para enseñar por qué los hospitales necesitan intérpretes <span class="gl" tabindex="0" data-en="qualified">calificados</span>, y por qué los falsos amigos no son solo un problema de la clase de español.</p>
+        <p class="src">Source: Canopy, "«Intoxicado»: What can happen with the misinterpretation of a single word" (2015).</p>
+      </div>
+      <div id="l1Cont"></div>
+      <button class="chk-btn" onclick="checkMCset('l1','rsL1')">Score Lectura 1</button>
+      <button class="rst-btn" onclick="resetMCset('l1','rsL1')">Reset</button>
+      <div class="res-msg" id="rsL1" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Lectura 2 · La consulta de doña Marta <span class="pill">BUSQUE LOS TÉRMINOS</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:10px;"><strong>Step 1:</strong> tap every <strong>medical term</strong> in the story (conditions, symptoms, medicines, tests and specialists). There are <strong>12</strong>. Wrong taps turn red. <strong>Step 2:</strong> answer the questions.</p>
+      <div class="hunt" id="huntText"></div>
+      <div class="hunt-bar"><span id="huntStat">Encontrados: 0 / 12 · Errores: 0</span><button class="rst-btn" style="margin:0;" onclick="buildHunt()">Reset</button></div>
+      <div id="l2Cont" style="margin-top:16px;"></div>
+      <button class="chk-btn" onclick="checkMCset('l2','rsL2')">Score Lectura 2</button>
+      <button class="rst-btn" onclick="resetMCset('l2','rsL2')">Reset</button>
+      <div class="res-msg" id="rsL2" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ═══ PRONUNCIACIÓN ═══ -->
+  <section class="sec" id="sec-pr">
+    <h2 class="sec-title">🎤 Pronunciación · Habla y avanza</h2>
+    <p class="sec-sub">términos médicos · frases · oraciones de la consulta</p>
+    <div class="ch-intro">
+      <div class="label">Pronunciación · Your voice is the controller</div>
+      <h2>Say it so the patient understands it</h2>
+      <p>Press <strong>🔊 Escucha</strong> to hear the model, then press <strong>🎤 Habla</strong> and say the word or phrase clearly. The page listens and gives you a <strong>pronunciation score</strong>. With <strong>80% or more</strong>, the next term unlocks. Below 80%, listen again and try as many times as you need. Use <strong>Chrome, Edge or Safari</strong>, allow the microphone, and find a quiet place.</p>
+    </div>
+
+    <div class="pr-warn" id="prWarn"></div>
+
+    <div class="pr-wrap" id="prGame">
+      <div class="pr-top">
+        <div class="pr-stat"><span>Puntos</span><b id="prPts">0</b></div>
+        <div class="pr-stat"><span>Palabra</span><b id="prNum">1/1</b></div>
+        <div class="pr-stat"><span>Racha</span><b id="prStreak">0</b></div>
+        <div class="pr-stat"><span>Intentos</span><b id="prTries">0</b></div>
+        <span class="pr-level" id="prLevel">Nivel 1</span>
+      </div>
+      <div class="pr-dots" id="prDots"></div>
+
+      <div class="pr-card" id="prCard">
+        <div class="pr-word" id="prWord">—</div>
+        <div class="pr-en" id="prEn"></div>
+        <div class="pr-tip" id="prTip" style="display:none;"></div>
+        <div class="pr-btns">
+          <button type="button" class="pr-btn pr-listen" onclick="prSpeak(1)">🔊 Escucha</button>
+          <button type="button" class="pr-btn pr-listen" onclick="prSpeak(0.65)">🐢 Despacio</button>
+          <button type="button" class="pr-btn pr-mic" id="prMic" onclick="prListen()">🎤 Habla</button>
+        </div>
+        <div class="pr-interim" id="prInterim" aria-live="polite"></div>
+        <div class="pr-result" id="prResult" aria-live="polite">
+          <div class="pr-meter">
+            <div class="pr-ring" id="prRing"><b id="prScore">0%</b></div>
+            <div class="pr-msg">
+              <div class="pr-verdict" id="prVerdict"></div>
+              <div class="pr-heard" id="prHeard"></div>
+              <div class="pr-threshold">Mínimo para avanzar: 80% · Tu mejor puntuación: <span id="prBest">0%</span></div>
+            </div>
+          </div>
+          <div class="pr-words" id="prWords"></div>
+        </div>
+        <div class="pr-btns">
+          <button type="button" class="pr-btn pr-next" id="prNext" onclick="prNextWord()" disabled>Siguiente ➜</button>
+        </div>
+      </div>
+
+      <div class="pr-done" id="prDone">
+        <h3>¡Felicidades! 🎉</h3>
+        <p id="prFinal"></p>
+        <table class="pr-table"><thead><tr><th>Palabra</th><th>Mejor</th><th>Intentos</th><th>Estrellas</th></tr></thead><tbody id="prTable"></tbody></table>
+        <button type="button" class="pr-btn pr-mic" onclick="prRestart()">↺ Jugar otra vez</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">¿Cómo funciona? · How it works <span class="pill">TIPS</span></div>
+      <div class="obj-grid">
+        <div class="obj"><span class="obj-num">1</span><span class="obj-text">Listen first. Use 🐢 <em>Despacio</em> to hear the syllables of long terms.</span></div>
+        <div class="obj"><span class="obj-num">2</span><span class="obj-text">Press 🎤, wait for the red button, then speak at a normal speed.</span></div>
+        <div class="obj"><span class="obj-num">3</span><span class="obj-text">Your score compares the <strong>sounds</strong> the computer heard with the sounds of the term (b = v, silent h, z = s…).</span></div>
+        <div class="obj"><span class="obj-num">4</span><span class="obj-text">⭐ 80% · ⭐⭐ 90% · ⭐⭐⭐ 97%. Fewer tries = more points. Your progress is saved in this browser.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ JUEGOS ═══ -->
+  <section class="sec" id="sec-ju">
+    <h2 class="sec-title">Juegos · Play &amp; practice</h2>
+    <p class="sec-sub">sort · stress · match · quiz · challenge</p>
+
+    <div class="card">
+      <div class="card-title">Juego 1 · ¿Cognado o falso amigo? <span class="pill">SORTING</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:12px;">Tap a word, then tap the box where it belongs. <strong>Cognado</strong> = same meaning as the English look-alike. <strong>Falso amigo</strong> = different meaning. Tap a placed word to take it back.</p>
+      <div class="sort-pool" id="sortPool"></div>
+      <div class="sort-bins two" id="sortBins"></div>
+      <button class="chk-btn" onclick="checkSort()">Check</button>
+      <button class="rst-btn" onclick="buildSort()">Reset</button>
+      <div class="res-msg" id="rsSort" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 2 · ¿Dónde está el acento? <span class="pill">12 PALABRAS</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:12px;">Tap the <strong>stressed syllable</strong> of each word. Accent marks are hidden until you answer, so use the rules from G5! You'll hear the word after you choose.</p>
+      <div id="stressCont"></div>
+      <div class="res-msg" id="rsStress" aria-live="polite"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildStress()">Reset</button>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 3 · Emparejamiento: términos médicos <span class="pill">MATCHING</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Click a Spanish term, then its English meaning. Correct pairs turn green.</p>
+      <div id="matchCont"></div>
+      <button class="rst-btn" style="margin-left:0;" onclick="buildMatch()">Shuffle / Reset</button>
+      <div class="res-msg" id="rsMatch" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 4 · Opción múltiple: Capítulo 7 <span class="pill">QUIZ</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Ten questions on terms, specialties, false friends, register and pronunciation.</p>
+      <div id="quizCont"></div>
+      <button class="chk-btn" onclick="checkMCset('quiz','rsQuiz')">Score My Quiz</button>
+      <button class="rst-btn" onclick="resetMCset('quiz','rsQuiz')">Reset</button>
+      <div class="res-msg" id="rsQuiz" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Juego 5 · Reto: ¿qué especialista? <span class="pill">12 ITEMS</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:14px;">Read the problem and choose the right specialist. Build your streak!</p>
+      <div class="game-wrap" id="gameWrap">
+        <div class="game-scorebar">
+          <div>Puntos<b id="gScore">0</b></div>
+          <div>Racha<b id="gStreak">0</b></div>
+          <div>Pregunta<b id="gNum">1/12</b></div>
+        </div>
+        <div class="game-prompt" id="gPrompt">—</div>
+        <div class="game-sub" id="gSub"></div>
+        <div class="game-opts" id="gOpts"></div>
+        <div class="game-feedback" id="gFb"></div>
+      </div>
+      <button class="rst-btn" style="margin-left:0;" onclick="startGame()">Restart Game</button>
+    </div>
+  </section>
+
+  <!-- ═══ POD · OB/GYN ═══ -->
+  <section class="sec" id="sec-pod">
+    <h2 class="sec-title">★ Pod de especialidad · Ginecología y obstetricia</h2>
+    <p class="sec-sub">el embarazo · la cita prenatal · la última regla · las cesáreas</p>
+
+    <div class="pod-hero">
+      <div class="label">Pod de especialidad · Semana 7</div>
+      <h2>La primera cita prenatal</h2>
+      <p>At a prenatal visit, three questions come first: <em>¿Está embarazada? ¿Cuándo fue su última regla? ¿Cuántas semanas tiene?</em> The answers set the due date and the whole plan of care. This pod uses this week's terminology (<em>ginecología, el ultrasonido, el útero</em>) and the intake questions from Capítulo 6.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Vocabulario de OB/GYN <span class="pill">12 CARDS</span></div>
+      <div class="vocab-grid" id="fcPod"></div>
+    </div>
+
+    <div class="gbox alt">
+      <h3><span class="num">POD</span>Frases en la cita prenatal</h3>
+      <p class="sub">Tap 🔊 to hear each one.</p>
+      <table class="conj-table">
+        <thead><tr><th>Frase</th><th>English</th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="accent">¿Está embarazada?</td><td>Are you pregnant?</td><td><button type="button" class="play-btn" onclick="speak('¿Está embarazada?')">🔊</button></td></tr>
+          <tr><td class="accent">¿Cuántas semanas tiene?</td><td>How many weeks along are you?</td><td><button type="button" class="play-btn" onclick="speak('¿Cuántas semanas tiene?')">🔊</button></td></tr>
+          <tr><td class="accent">¿Cuándo fue su última regla?</td><td>When was your last period?</td><td><button type="button" class="play-btn" onclick="speak('¿Cuándo fue su última regla?')">🔊</button></td></tr>
+          <tr><td class="accent">¿Es su primer embarazo?</td><td>Is this your first pregnancy?</td><td><button type="button" class="play-btn" onclick="speak('¿Es su primer embarazo?')">🔊</button></td></tr>
+          <tr><td class="accent">Le vamos a hacer un ultrasonido.</td><td>We're going to do an ultrasound.</td><td><button type="button" class="play-btn" onclick="speak('Le vamos a hacer un ultrasonido.')">🔊</button></td></tr>
+          <tr><td class="accent">Tome las vitaminas prenatales todos los días.</td><td>Take the prenatal vitamins every day.</td><td><button type="button" class="play-btn" onclick="speak('Tome las vitaminas prenatales todos los días.')">🔊</button></td></tr>
+        </tbody>
+      </table>
+      <div class="ojo"><div class="ojo-title">¡OJO! · «fue» y «embarazada»</div><p><em>¿Cuándo <strong>fue</strong>…?</em> is past tense (<em>when was…?</em>). Learn it as a fixed question for now. And never use <em>embarazada</em> to mean embarrassed: <em>Estoy embarazada</em> always means <strong>I'm pregnant</strong>. Many patients also say <em>Estoy esperando</em> or <em>Estoy en estado</em>.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Diálogo · La primera cita prenatal <span class="pill">🔊 ESCUCHE</span></div>
+      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:6px;">Mrs. Morales thinks she is pregnant. Find the three key pod questions and every medical term.</p>
+      <button class="chk-btn" style="margin-top:4px;" onclick="playPodDialogue()">🔊 Play dialogue</button>
+      <button class="rst-btn" onclick="stopSpeech()">■ Stop</button>
+      <div class="dlg" id="dlgPod"></div>
+    </div>
+
+    <div class="cult-card" style="background:linear-gradient(135deg,#9B2C2C 0%,#7A2020 100%);">
+      <div class="label">En Latinoamérica</div>
+      <h3>¿Parto vaginal o cesárea?</h3>
+      <p>Según la OMS (2021), cerca de <strong>4 de cada 10 partos</strong> (43 %) en Latinoamérica y el Caribe son por <span class="gl light" tabindex="0" data-en="C-section">cesárea</span>. En <strong>Brasil</strong> y la <strong>República Dominicana</strong> ya hay más cesáreas que partos vaginales. En todo el mundo, la cifra es 1 de cada 5 partos (21 %); en 1990 era solo el 7 %. La OMS explica que la cesárea <span class="gl light" tabindex="0" data-en="saves lives">salva vidas</span> cuando hay una razón médica, pero que las cesáreas <span class="gl light" tabindex="0" data-en="unnecessary">innecesarias</span> pueden poner en riesgo a la madre y al bebé. For you, this means many patients from these countries may expect, ask about or fear a C-section: <em>¿Voy a necesitar una cesárea?</em></p>
+      <div class="fact-pills">
+        <span>Latinoamérica y el Caribe: 43 %</span>
+        <span>Brasil · República Dominicana: más del 50 %</span>
+        <span>el mundo: 21 %</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Comprueba · Pod de OB/GYN <span class="pill">6 PREGUNTAS</span></div>
+      <div id="podCont"></div>
+      <button class="chk-btn" onclick="checkMCset('pod','rsPod')">Score the Pod</button>
+      <button class="rst-btn" onclick="resetMCset('pod','rsPod')">Reset</button>
+      <div class="res-msg" id="rsPod" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    SPSCC · Spanish for Healthcare Workers · Capítulo 7 · Medical Terminology
+  </div>
+
+</div>
+
+<script>
+function switchTab(tab, el){
+  document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  document.querySelectorAll('.sec').forEach(function(s){ s.classList.remove('active'); });
+  if(el){ el.classList.add('active'); el.setAttribute('aria-selected','true'); }
+  var s = document.getElementById('sec-'+tab); if(s) s.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Helpers ── */
+function normalize(s){ if(!s) return ''; return s.toString().trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[¿?¡!.,;:]/g,'').replace(/\s+/g,' ').trim(); }
+function wordsOf(str){ return normalize(str).split(/\s+/).filter(Boolean); }
+function val(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+function setMsg(id, ok, text){ var m=document.getElementById(id); if(!m) return; m.textContent=text; m.className='res-msg '+(ok?'ok':'ng'); }
+function showFb(id, ok, msg){ var fb=document.getElementById(id); if(!fb) return; fb.className='task-fb show '+(ok?'ok':'ng'); fb.textContent=(ok?'✓ ':'✗ ')+msg; }
+function clearFb(id){ var fb=document.getElementById(id); if(fb) fb.className='task-fb'; }
+function answersOf(el){ return (el.getAttribute('data-answer')||'').split('|'); }
+function isRight(el){ if(el.getAttribute('data-digits')){ var d=(el.value||'').replace(/\D/g,''); return !!d && d===el.getAttribute('data-answer'); } var v=normalize(el.value); return !!v && answersOf(el).some(function(a){ return normalize(a)===v; }); }
+
+/* ── Speech (device Spanish voice) ── */
+var esVoice = null;
+function pickVoice(){
+  if(!('speechSynthesis' in window)) return;
+  var vs = window.speechSynthesis.getVoices(), pref = ['es-MX','es-US','es-419','es-CO','es-ES'];
+  for(var p=0;p<pref.length;p++){ for(var i=0;i<vs.length;i++){ if(vs[i].lang && vs[i].lang.replace('_','-')===pref[p]){ esVoice=vs[i]; return; } } }
+  for(var j=0;j<vs.length;j++){ if(vs[j].lang && vs[j].lang.toLowerCase().indexOf('es')===0){ esVoice=vs[j]; return; } }
+}
+if('speechSynthesis' in window){ pickVoice(); window.speechSynthesis.onvoiceschanged = pickVoice; }
+function utter(text, rate){
+  var u = new SpeechSynthesisUtterance(text.replace(/…/g,''));
+  u.lang = esVoice ? esVoice.lang : 'es-MX'; if(esVoice) u.voice = esVoice; u.rate = rate || 0.9;
+  return u;
+}
+function speak(texts){
+  try{
+    if(!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    (Array.isArray(texts)?texts:[texts]).forEach(function(t){ if(t) window.speechSynthesis.speak(utter(t)); });
+  }catch(e){}
+}
+function stopSpeech(){ try{ window.speechSynthesis.cancel(); }catch(e){} }
+
+/* ── Flashcards ── */
+
+function buildFlash(list, containerId, extraClass){
+  var c = document.getElementById(containerId);
+  list.forEach(function(v){
+    var card = document.createElement('div');
+    card.className = 'vocab-card' + (extraClass ? ' '+extraClass : '');
+    card.setAttribute('role','button');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label', v.es + '. Flip to see the translation and hear the pronunciation.');
+    card.innerHTML = '<div class="vocab-card-inner"><div class="vocab-front">'+v.es+'<small>'+v.note+'</small><span class="vocab-sound" aria-hidden="true">🔊</span>' +
+      '</div><div class="vocab-back">'+v.en + (v.ex ? '<span class="vocab-ex">'+v.ex+'</span>' : '') +
+      '<button type="button" class="vocab-replay" aria-label="Play again: ' + v.es.replace(/"/g,'&quot;') + '">🔊</button></div></div>';
+    function flip(){ var nowFlipped = card.classList.toggle('flipped'); if(nowFlipped) speak([v.es, v.ex]); }
+    card.addEventListener('click', flip);
+    card.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); flip(); } });
+    card.querySelector('.vocab-replay').addEventListener('click', function(e){ e.stopPropagation(); speak([v.es, v.ex]); });
+    c.appendChild(card);
+  });
+}
+
+
+function checkBlanks(idsCSV, resultId){
+  var ids = idsCSV.split(','), correct = 0, total = ids.length;
+  ids.forEach(function(id){
+    var el = document.getElementById(id); if(!el) return;
+    el.classList.remove('ok','ng');
+    if(isRight(el)){ el.classList.add('ok'); correct++; } else el.classList.add('ng');
+  });
+  var msg = document.getElementById(resultId);
+  if(msg){
+    if(correct===total){ msg.textContent='¡Perfecto! '+correct+' / '+total+' correctas. ✓'; msg.className='res-msg ok'; }
+    else { msg.textContent=correct+' / '+total+' correctas. Revisa las marcadas en rojo.'; msg.className='res-msg ng'; }
+  }
+  updateCompletion();
+}
+function resetBlanks(idsCSV, resultId){
+  idsCSV.split(',').forEach(function(id){ var el=document.getElementById(id); if(el){ el.value=''; el.classList.remove('ok','ng'); } });
+  var msg=document.getElementById(resultId); if(msg){ msg.textContent=''; msg.className='res-msg'; }
+  updateCompletion();
+}
+
+/* ── Multiple-choice engine ── */
+var quizState = {}, MC_SETS = {};
+function buildMC(data, key, containerId){
+  var container = document.getElementById(containerId); if(!container) return;
+  container.innerHTML = '';
+  quizState[key] = data.map(function(){ return null; }); MC_SETS[key] = data;
+  data.forEach(function(item, i){
+    var div = document.createElement('div');
+    div.className = 'quiz-item'; div.id = key+'_item_'+i;
+    var opts = item.options.map(function(opt, j){
+      return '<button type="button" class="quiz-opt" id="'+key+'_'+i+'_'+j+'" onclick="pickMC(\''+key+'\','+i+','+j+')"><span class="letter">'+'ABCD'[j]+'</span><span>'+opt+'</span></button>';
+    }).join('');
+    div.innerHTML = '<div class="quiz-q"><span class="qnum">'+(i+1)+'.</span>'+item.q+'</div><div class="quiz-gloss">'+item.gloss+'</div><div class="quiz-options">'+opts+'</div><div class="quiz-explain" id="'+key+'_exp_'+i+'"></div>';
+    container.appendChild(div);
+  });
+}
+function pickMC(key, i, j){
+  quizState[key][i] = j;
+  MC_SETS[key][i].options.forEach(function(_, k){ document.getElementById(key+'_'+i+'_'+k).classList.toggle('selected', k===j); });
+  updateCompletion();
+}
+function revealMC(key, i){
+  var item = MC_SETS[key][i], chosen = quizState[key][i], ok = chosen===item.answer;
+  item.options.forEach(function(_, j){ var btn=document.getElementById(key+'_'+i+'_'+j); btn.classList.remove('is-correct','is-wrong'); if(j===item.answer) btn.classList.add('is-correct'); else if(j===chosen) btn.classList.add('is-wrong'); });
+  var exp = document.getElementById(key+'_exp_'+i); exp.className='quiz-explain show';
+  exp.innerHTML = '<strong>'+(ok?'✓ ¡Correcto!':'✗ No exactamente.')+'</strong> '+item.explain;
+  document.getElementById(key+'_item_'+i).className='quiz-item '+(ok?'correct':'wrong');
+  return ok;
+}
+function resetMC(key){
+  var data = MC_SETS[key]; quizState[key] = data.map(function(){ return null; });
+  data.forEach(function(item, i){ item.options.forEach(function(_, j){ document.getElementById(key+'_'+i+'_'+j).className='quiz-opt'; }); document.getElementById(key+'_exp_'+i).className='quiz-explain'; document.getElementById(key+'_item_'+i).className='quiz-item'; });
+}
+
+
+var mSelEs = null, mSelEn = null, mMatched = 0, matchDone = false;
+function buildMatch(){
+  var c = document.getElementById('matchCont');
+  var order = matchData.map(function(_, i){ return i; });
+  for(var k=order.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=order[k]; order[k]=order[r]; order[r]=t; }
+  var esHtml = matchData.map(function(m, i){ return '<div class="mi" id="mes-'+i+'" data-idx="'+i+'" onclick="selSpanish(this)">'+(i+1)+'. '+m.es+'</div>'; }).join('');
+  var enHtml = order.map(function(idx){ return '<div class="mi" id="men-'+idx+'" data-idx="'+idx+'" onclick="selEnglish(this)">'+matchData[idx].en+'</div>'; }).join('');
+  c.innerHTML = '<div class="match-cols"><div><div class="match-col-label">Español</div>'+esHtml+'</div><div><div class="match-col-label">English</div>'+enHtml+'</div></div>';
+  mSelEs=null; mSelEn=null; mMatched=0; matchDone=false;
+  document.getElementById('rsMatch').textContent=''; document.getElementById('rsMatch').className='res-msg';
+  updateCompletion();
+}
+function selSpanish(el){ if(el.classList.contains('done')) return; document.querySelectorAll('#matchCont .mi[id^=mes-]').forEach(function(i){ i.classList.remove('sel'); }); el.classList.add('sel'); mSelEs=el; tryMatch(); }
+function selEnglish(el){ if(el.classList.contains('done')) return; document.querySelectorAll('#matchCont .mi[id^=men-]').forEach(function(i){ i.classList.remove('sel','bad'); }); el.classList.add('sel'); mSelEn=el; tryMatch(); }
+function tryMatch(){
+  if(!mSelEs || !mSelEn) return;
+  if(mSelEs.dataset.idx === mSelEn.dataset.idx){
+    mSelEs.classList.remove('sel'); mSelEs.classList.add('done'); mSelEn.classList.remove('sel'); mSelEn.classList.add('done'); mMatched++;
+    if(mMatched===matchData.length){ matchDone=true; setMsg('rsMatch', true, '¡Excelente! Emparejaste las '+mMatched+' frases. ✓'); }
+  } else { var bad=mSelEn; bad.classList.add('bad'); setTimeout(function(){ bad.classList.remove('bad','sel'); }, 700); }
+  mSelEs=null; mSelEn=null; updateCompletion();
+}
+
+
+function buildShort(){
+  var c = document.getElementById('shortCont');
+  c.innerHTML = shortData.map(function(s, i){
+    return '<div style="margin-bottom:14px;"><div style="font-size:0.92rem;font-weight:700;color:var(--navy);">'+(i+1)+'. '+s.q+' <span style="font-weight:400;color:var(--text-hint);font-style:italic;font-size:0.82rem;">'+s.gloss+'</span></div><input class="task-input" id="sa'+i+'" placeholder="Escribe tu respuesta…" autocomplete="off"><div class="task-fb" id="fbsa'+i+'"></div></div>';
+  }).join('');
+}
+function gradeShort(i){
+  var s = shortData[i], v = val('sa'+i), w = wordsOf(v);
+  if(!v) return { ok:false, msg:'Escribe tu respuesta.' };
+  if(w.length < s.minW) return { ok:false, msg:'Escribe una oración completa (mínimo '+s.minW+' palabras).' };
+  var has = function(k){ return w.indexOf(normalize(k)) !== -1; };
+  if(s.all && !s.all.every(has)) return { ok:false, msg:s.hint };
+  if(s.any && !s.any.some(has)) return { ok:false, msg:s.hint };
+  return { ok:true, msg:'¡Bien! Oración completa.' };
+}
+function checkShort(){
+  var correct = 0;
+  shortData.forEach(function(_, i){ var r=gradeShort(i); document.getElementById('sa'+i).style.borderBottomColor = r.ok?'var(--sage)':'var(--terracotta)'; showFb('fbsa'+i, r.ok, r.msg); if(r.ok) correct++; });
+  setMsg('rs7', correct===shortData.length, correct+' / '+shortData.length+' respuestas válidas.');
+  updateCompletion();
+}
+function resetShort(){
+  shortData.forEach(function(_, i){ var el=document.getElementById('sa'+i); el.value=''; el.style.borderBottomColor=''; clearFb('fbsa'+i); });
+  document.getElementById('rs7').className='res-msg'; document.getElementById('rs7').textContent=''; updateCompletion();
+}
+
+
+var gIdx=0, gScore=0, gStreak=0, gFinished=false, gLock=false;
+function startGame(){
+  gIdx=0; gScore=0; gStreak=0; gFinished=false; gLock=false;
+  document.getElementById('gScore').textContent='0'; document.getElementById('gStreak').textContent='0';
+  document.getElementById('gFb').textContent=''; document.getElementById('gFb').className='game-feedback';
+  showGameQ(); updateCompletion();
+}
+function showGameQ(){
+  var q = gameData[gIdx];
+  document.getElementById('gNum').textContent = (gIdx+1)+'/'+gameData.length;
+  document.getElementById('gPrompt').textContent = q.n;
+  document.getElementById('gSub').textContent = 'Choose the specialist for this problem.';
+  var opts = q.o.slice();
+  for(var k=opts.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=opts[k]; opts[k]=opts[r]; opts[r]=t; }
+  document.getElementById('gOpts').innerHTML = opts.map(function(o){ return '<button type="button" class="game-opt" onclick="pickGame(this,\''+o.replace(/'/g,"\\'")+'\')">'+o+'</button>'; }).join('');
+  gLock=false;
+}
+function pickGame(el, choice){
+  if(gLock) return; gLock=true;
+  var q = gameData[gIdx], fb = document.getElementById('gFb');
+  var ok = choice === q.a;
+  document.querySelectorAll('#gOpts .game-opt').forEach(function(b){ if(b.textContent===q.a) b.classList.add('is-correct'); });
+  if(ok){ gScore++; gStreak++; fb.textContent='✓ ¡Correcto! '+q.a.charAt(0).toUpperCase()+q.a.slice(1)+'.'; fb.className='game-feedback ok'; speak(q.a); }
+  else { gStreak=0; el.classList.add('is-wrong'); fb.textContent='✗ Correct answer: '+q.a+'.'; fb.className='game-feedback ng'; }
+  document.getElementById('gScore').textContent=gScore; document.getElementById('gStreak').textContent=gStreak;
+  setTimeout(function(){
+    gIdx++;
+    if(gIdx < gameData.length){ showGameQ(); }
+    else { gFinished=true; document.getElementById('gPrompt').innerHTML='<span class="game-done">¡Fin! '+gScore+' / '+gameData.length+'</span>'; document.getElementById('gSub').textContent = gScore===gameData.length?'¡Perfecto! Conoces a todos los especialistas.':'Pulsa "Restart Game" para intentarlo de nuevo.'; document.getElementById('gOpts').innerHTML=''; document.getElementById('gNum').textContent=gameData.length+'/'+gameData.length; }
+    updateCompletion();
+  }, 950);
+}
+
+
+function escapeHtml(str){ return (str==null?'':String(str)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function stripTags(html){ var dv=document.createElement('div'); dv.innerHTML=html||''; return (dv.textContent||'').replace(/\s+/g,' ').trim(); }
+function reportTable(title, scoreText, groups){
+  var blocks = groups.map(function(g){
+    var rows = g.items.map(function(it){ return '<tr class="'+(it.value?(it.ok?'ok':'bad'):'blank')+'"><td class="num">'+escapeHtml(it.label)+'</td><td>'+(it.value?escapeHtml(it.value):'<span class="blanktxt">(en blanco)</span>')+'</td><td class="note">'+escapeHtml(it.msg||'')+'</td><td class="mark">'+(it.value?(it.ok?'✓':'✗'):'—')+'</td></tr>'; }).join('');
+    return '<h3>'+escapeHtml(g.heading)+'</h3><table><tbody>'+rows+'</tbody></table>';
+  }).join('');
+  return '<h2>'+escapeHtml(title)+'<span class="score">'+escapeHtml(scoreText)+'</span></h2>'+blocks;
+}
+function collectBlanks(prefix, n, heading){
+  var items=[], correct=0;
+  for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(!el) continue; var v=(el.value||'').trim(); var ok=isRight(el); if(ok) correct++; items.push({ label:String(i), value:v, ok:ok, msg: ok?'Correcto.':'Respuesta: '+answersOf(el).join(' / ') }); }
+  return { heading:heading, items:items, correct:correct, total:items.length };
+}
+function mcReport(data, key){
+  return data.map(function(item, i){ var ch=quizState[key][i]; return { label:String(i+1), value: ch===null?'':stripTags(item.options[ch]), ok: ch===item.answer, msg: ch===item.answer?'Correcto.':'Correcta: '+stripTags(item.options[item.answer]) }; });
+}
+
+/* ═══ Capítulo 7 · data and activities ═══ */
+
+/* ── Vocabulary ── */
+var vocabTerms = [
+  {es:'la presión arterial', note:'paciente: la presión', en:'blood pressure', ex:'Voy a tomarle la presión arterial.'},
+  {es:'la hipertensión', note:'paciente: la presión alta', en:'hypertension', ex:'Tiene hipertensión desde hace cinco años.'},
+  {es:'la diabetes', note:'paciente: el azúcar', en:'diabetes', ex:'Tiene diabetes tipo 2.'},
+  {es:'el colesterol', note:'co-les-te-ROL', en:'cholesterol', ex:'Tiene el colesterol alto.'},
+  {es:'el asma', note:'femenino: el asma crónica', en:'asthma', ex:'Mi hijo tiene asma.'},
+  {es:'la artritis', note:'-itis', en:'arthritis', ex:'La artritis le causa dolor en las rodillas.'},
+  {es:'la neumonía', note:'paciente: la pulmonía', en:'pneumonia', ex:'Puede ser una neumonía.'},
+  {es:'la infección', note:'-ción', en:'infection', ex:'Tiene una infección de oído.'},
+  {es:'el infarto', note:'paciente: ataque al corazón', en:'heart attack', ex:'Su papá tuvo un infarto.'},
+  {es:'el cáncer', note:'sustantivo', en:'cancer', ex:'Tiene antecedentes de cáncer en la familia.'},
+  {es:'el síntoma', note:'¡masculino!', en:'symptom', ex:'¿Qué síntomas tiene?'},
+  {es:'el diagnóstico', note:'diag-NÓS-ti-co', en:'diagnosis', ex:'El diagnóstico es diabetes tipo 2.'},
+  {es:'el tratamiento', note:'sustantivo', en:'treatment', ex:'El tratamiento dura diez días.'},
+  {es:'el antibiótico', note:'medicina', en:'antibiotic', ex:'Tome el antibiótico cada ocho horas.'},
+  {es:'la vacuna', note:'prevención', en:'vaccine', ex:'Necesita la vacuna contra la gripe.'},
+  {es:'la radiografía', note:'paciente: los rayos X', en:'X-ray', ex:'Le vamos a hacer una radiografía.'}
+];
+var vocabSpec = [
+  {es:'la cardiología', note:'el / la cardiólogo/a', en:'cardiology', ex:'Necesita ver al cardiólogo.'},
+  {es:'la dermatología', note:'el / la dermatólogo/a', en:'dermatology', ex:'La dermatóloga revisa la piel.'},
+  {es:'la neurología', note:'el / la neurólogo/a', en:'neurology', ex:'El neurólogo trata las migrañas.'},
+  {es:'la oncología', note:'el / la oncólogo/a', en:'oncology', ex:'La oncóloga trata el cáncer.'},
+  {es:'la ginecología', note:'el / la ginecólogo/a', en:'gynecology', ex:'Tiene cita con la ginecóloga.'},
+  {es:'la obstetricia', note:'el / la obstetra', en:'obstetrics', ex:'La obstetra atiende el parto.'},
+  {es:'la pediatría', note:'el / la pediatra', en:'pediatrics', ex:'El pediatra examina al bebé.'},
+  {es:'la psiquiatría', note:'el / la psiquiatra', en:'psychiatry', ex:'La psiquiatra trata la depresión.'},
+  {es:'la radiología', note:'el / la radiólogo/a', en:'radiology', ex:'El radiólogo lee la radiografía.'},
+  {es:'la oftalmología', note:'el / la oftalmólogo/a', en:'ophthalmology', ex:'El oftalmólogo examina los ojos.'},
+  {es:'la gastroenterología', note:'el / la gastroenterólogo/a', en:'gastroenterology', ex:'Va al gastroenterólogo por el estómago.'},
+  {es:'la ortopedia', note:'el / la ortopedista', en:'orthopedics', ex:'La ortopedista trata la fractura.'}
+];
+var vocabFalse = [
+  {es:'embarazada', note:'≠ embarrassed', en:'pregnant', ex:'Estoy embarazada de tres meses.'},
+  {es:'avergonzado/a', note:'= embarrassed', en:'embarrassed', ex:'Está avergonzado y no quiere hablar.'},
+  {es:'constipado/a', note:'≠ constipated', en:'stuffed up, has a cold', ex:'Estoy constipado: tengo mocos y tos.'},
+  {es:'estreñido/a', note:'= constipated', en:'constipated', ex:'No puedo ir al baño. Estoy estreñida.'},
+  {es:'el éxito', note:'≠ exit', en:'success', ex:'La operación fue un éxito.'},
+  {es:'la salida', note:'= exit', en:'exit', ex:'La salida está al fondo del pasillo.'},
+  {es:'intoxicado/a', note:'≠ drunk', en:'poisoned, sick from something taken', ex:'El niño está intoxicado: comió algo malo.'},
+  {es:'la molestia', note:'≠ molestation', en:'discomfort', ex:'Siento una molestia en el estómago.'},
+  {es:'actualmente', note:'≠ actually', en:'currently', ex:'Actualmente no toma medicinas.'},
+  {es:'la receta', note:'≠ receipt', en:'prescription', ex:'Lleve la receta a la farmacia.'}
+];
+var vocabPod = [
+  {es:'el embarazo', note:'sustantivo', en:'pregnancy', ex:'¿Es su primer embarazo?'},
+  {es:'la cita prenatal', note:'visita', en:'prenatal appointment', ex:'Su próxima cita prenatal es en cuatro semanas.'},
+  {es:'el ultrasonido', note:'también: la ecografía', en:'ultrasound', ex:'Le vamos a hacer un ultrasonido.'},
+  {es:'el útero', note:'cuerpo', en:'uterus', ex:'El bebé crece en el útero.'},
+  {es:'la regla', note:'clínico: la menstruación', en:'period', ex:'¿Cuándo fue su última regla?'},
+  {es:'las semanas de embarazo', note:'tiempo', en:'weeks of pregnancy', ex:'Tiene veinte semanas de embarazo.'},
+  {es:'el parto', note:'sustantivo', en:'birth / delivery', ex:'El parto fue sin complicaciones.'},
+  {es:'la cesárea', note:'procedimiento', en:'C-section', ex:'¿Tuvo una cesárea antes?'},
+  {es:'el / la obstetra', note:'especialista', en:'obstetrician', ex:'La obstetra la va a ver hoy.'},
+  {es:'las náuseas', note:'síntoma', en:'nausea', ex:'Tengo náuseas por la mañana.'},
+  {es:'las vitaminas prenatales', note:'medicina', en:'prenatal vitamins', ex:'Tome las vitaminas prenatales.'},
+  {es:'la fecha probable de parto', note:'clínico', en:'due date', ex:'Su fecha probable de parto es en mayo.'}
+];
+
+/* ── Pod dialogue ── */
+var podDialogue = [
+  ['Enfermera','Buenos días, señora Morales. ¿Cuál es el motivo de su visita?','Good morning, Mrs. Morales. What is the reason for your visit?'],
+  ['Paciente','Creo que estoy embarazada. Tengo náuseas por la mañana.','I think I\'m pregnant. I have nausea in the morning.'],
+  ['Enfermera','¿Cuándo fue su última regla?','When was your last period?'],
+  ['Paciente','Fue el diez de agosto, más o menos.','It was August 10, more or less.'],
+  ['Enfermera','Entonces tiene unas doce semanas de embarazo. ¿Es su primer embarazo?','Then you\'re about twelve weeks pregnant. Is this your first pregnancy?'],
+  ['Paciente','No, es el segundo. Tengo una hija de cuatro años.','No, it\'s the second. I have a four-year-old daughter.'],
+  ['Enfermera','¿Tuvo un parto vaginal o una cesárea?','Did you have a vaginal birth or a C-section?'],
+  ['Paciente','Una cesárea. ¿Voy a necesitar otra cesárea?','A C-section. Am I going to need another C-section?'],
+  ['Enfermera','Es una buena pregunta para la ginecóloga, la doctora Ríos. Hoy es su primera cita prenatal: le vamos a hacer un análisis de sangre y un ultrasonido.','That\'s a good question for the gynecologist, Dr. Ríos. Today is your first prenatal visit: we\'re going to do a blood test and an ultrasound.'],
+  ['Paciente','¿Puedo ver al bebé en el ultrasonido?','Can I see the baby on the ultrasound?'],
+  ['Enfermera','Sí. Vamos a ver el útero y al bebé, y vamos a escuchar el corazón. ¿Toma algún medicamento?','Yes. We\'re going to see the uterus and the baby, and listen to the heartbeat. Do you take any medication?'],
+  ['Paciente','Solo vitaminas prenatales.','Only prenatal vitamins.'],
+  ['Enfermera','Perfecto. Tome las vitaminas todos los días.','Perfect. Take the vitamins every day.']
+];
+function renderDlg(list, boxId){
+  document.getElementById(boxId).innerHTML = list.map(function(l){
+    return '<p><span class="who'+(l[0]==='Paciente'?' pt':'')+'">'+l[0]+'</span>'+l[1]+'<span class="en">'+l[2]+'</span></p>';
+  }).join('');
+}
+function playPodDialogue(){ speak(podDialogue.map(function(l){ return l[1]; })); }
+function speakEl(id){ var el=document.getElementById(id); if(!el) return; speak(el.textContent.replace(/🔊/g,'').replace(/\s+/g,' ').trim()); }
+function shuffled(n){ var a=[]; for(var i=0;i<n;i++) a.push(i); if(n<2) return a; do { for(var k=a.length-1;k>0;k--){ var r=Math.floor(Math.random()*(k+1)); var t=a[k]; a[k]=a[r]; a[r]=t; } } while(a.every(function(v,i){ return v===i; })); return a; }
+
+/* ── Tap-to-translate ── */
+document.addEventListener('click', function(e){
+  var g = e.target.closest ? e.target.closest('.gl') : null;
+  document.querySelectorAll('.gl.on').forEach(function(x){ if(x!==g) x.classList.remove('on'); });
+  if(g) g.classList.toggle('on');
+});
+document.addEventListener('keydown', function(e){ if((e.key==='Enter'||e.key===' ') && e.target.classList && e.target.classList.contains('gl')){ e.preventDefault(); e.target.click(); } });
+
+/* ── Ej 3: false friends (selects) ── */
+var SELECT_SETS = {
+  fa: [
+    {pre:'No puedo ir al baño desde hace tres días. Estoy', post:'.', o:['constipada','estreñida'], a:'estreñida', en:'I can\'t go to the bathroom.'},
+    {pre:'Tengo mocos, tos y la nariz tapada. Estoy', post:'.', o:['constipado','estreñido'], a:'constipado', en:'stuffy nose, cough'},
+    {pre:'Voy a tener un bebé en mayo. Estoy', post:'.', o:['avergonzada','embarazada'], a:'embarazada', en:'having a baby'},
+    {pre:'Me caí delante de todos. Estoy muy', post:'.', o:['embarazado','avergonzado'], a:'avergonzado', en:'I fell in front of everyone.'},
+    {pre:'Para salir, la', post:'está al fondo del pasillo.', o:['salida','éxito'], a:'salida', en:'the way out'},
+    {pre:'La operación fue un', post:': el paciente está muy bien.', o:['éxito','salida'], a:'éxito', en:'it went very well'},
+    {pre:'El niño comió unas pastillas de su abuela. Está', post:'.', o:['borracho','intoxicado'], a:'intoxicado', en:'he swallowed pills'},
+    {pre:'La farmacéutica necesita la', post:'del médico para darle el antibiótico.', o:['receta','recibo'], a:'receta', en:'the doctor\'s prescription'}
+  ]
+};
+function buildSelects(key, contId){
+  var c = document.getElementById(contId);
+  c.innerHTML = SELECT_SETS[key].map(function(it, i){
+    var o = '<option value="">…</option>' + it.o.map(function(x){ return '<option>'+x+'</option>'; }).join('');
+    return '<div class="ex-item"><span class="ex-num">'+(i+1)+'</span><span class="ex-text">'+it.pre+' <select class="sel" id="'+key+'_'+i+'" aria-label="Opción '+(i+1)+'">'+o+'</select>'+(it.post.charAt(0)==='.'||it.post.charAt(0)===':'?'':' ')+it.post+' <span class="ex-hint">('+it.en+')</span></span></div>';
+  }).join('');
+}
+function selCorrect(key){ var c=0; SELECT_SETS[key].forEach(function(it, i){ var el=document.getElementById(key+'_'+i); if(el && el.value===it.a) c++; }); return c; }
+function selFilled(key){ return SELECT_SETS[key].map(function(_, i){ var el=document.getElementById(key+'_'+i); return !!(el && el.value); }); }
+function checkSelects(key, rsId){
+  SELECT_SETS[key].forEach(function(it, i){ var el=document.getElementById(key+'_'+i); el.classList.remove('ok','ng'); el.classList.add(el.value===it.a?'ok':'ng'); });
+  var c = selCorrect(key), t = SELECT_SETS[key].length;
+  setMsg(rsId, c===t, c===t ? '¡Perfecto! '+c+' / '+t+' correctas. ✓' : c+' / '+t+' correctas. Review G3 · Falsos amigos.');
+  updateCompletion();
+}
+function resetSelects(key, rsId){
+  SELECT_SETS[key].forEach(function(_, i){ var el=document.getElementById(key+'_'+i); el.value=''; el.classList.remove('ok','ng'); });
+  var m=document.getElementById(rsId); m.textContent=''; m.className='res-msg'; updateCompletion();
+}
+
+/* ── Ej 6: report writing with term detector ── */
+var TERMS = [
+  ['presión','presion'],['hipertensión','hipertension'],['diabetes','diabetes'],['colesterol','colesterol'],['metformina','metformina'],['lisinopril','lisinopril'],
+  ['alérgico','alergic'],['penicilina','penicilina'],['tos','\\btos\\b'],['fiebre','fiebre'],['neumonía','neumonia'],['análisis','analisis'],['radiografía','radiografia'],['cardiólogo/a','cardiolog']
+];
+function termsUsed(){ var t = normalize(val('report')); return TERMS.map(function(x){ return new RegExp(x[1]).test(t); }); }
+function reportWords(){ return wordsOf(val('report')).length; }
+function reportDone(){ return reportWords()>=40 && termsUsed().filter(Boolean).length>=6; }
+function updateTerms(){
+  var used = termsUsed();
+  document.getElementById('termChips').innerHTML = TERMS.map(function(x, i){ return '<span class="'+(used[i]?'on':'')+'">'+(used[i]?'✓ ':'')+x[0]+'</span>'; }).join('');
+  var w = reportWords(), n = used.filter(Boolean).length, el = document.getElementById('wcount');
+  el.textContent = w+' palabras · '+n+' términos' + (reportDone() ? ' · ✓ ¡Listo!' : ' · goal: 40 palabras y 6 términos');
+  el.className = 'wordcount' + (reportDone() ? ' ok' : '');
+}
+document.addEventListener('input', function(e){ if(e.target && e.target.id==='report') updateTerms(); });
+
+/* ── Lectura 2: term hunt ── */
+var HUNT_TEXT = 'Doña Marta tiene 67 años y vive con su hija en Olympia. Hoy tiene una cita con su médica de familia. Doña Marta tiene [diabetes] y la [presión alta]. Toma [metformina] todos los días. Esta semana está muy cansada y tiene [tos] y [fiebre]. La médica la examina y le dice: «Le vamos a hacer un [análisis de sangre] y una [radiografía] del pecho. Puede ser una [neumonía]». También le explica que su [colesterol] está alto y que necesita ver a la [cardióloga]. Doña Marta es alérgica a la [penicilina], así que la médica le da otro [antibiótico]. Antes de salir, la recepcionista le da una cita con la especialista para el próximo mes.';
+var HUNT_N = 12, huntFound = 0, huntMiss = 0;
+function buildHunt(){
+  huntFound = 0; huntMiss = 0;
+  var html = HUNT_TEXT.replace(/\[([^\]]+)\]|([A-Za-zÁÉÍÓÚÑáéíóúñü]+)/g, function(m, t, w){
+    if(t) return '<span class="hw" data-t="1" tabindex="0">'+t+'</span>';
+    return '<span class="hw" tabindex="0">'+w+'</span>';
+  });
+  var c = document.getElementById('huntText'); c.innerHTML = html;
+  c.querySelectorAll('.hw').forEach(function(s){
+    function tap(){
+      if(s.classList.contains('found') || s.classList.contains('miss')) return;
+      if(s.getAttribute('data-t')){ s.classList.add('found'); huntFound++; speak(s.textContent); }
+      else { s.classList.add('miss'); huntMiss++; setTimeout(function(){ s.classList.remove('miss'); }, 900); }
+      document.getElementById('huntStat').textContent = 'Encontrados: '+huntFound+' / '+HUNT_N+' · Errores: '+huntMiss + (huntFound===HUNT_N?' · ¡Todos! ✓':'');
+      updateCompletion();
+    }
+    s.addEventListener('click', tap);
+    s.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); tap(); } });
+  });
+  document.getElementById('huntStat').textContent = 'Encontrados: 0 / '+HUNT_N+' · Errores: 0';
+  updateCompletion();
+}
+
+/* ── MC sets ── */
+var CF = ['Cierto','Falso'];
+var l1Data = [
+  { q:'¿Qué palabra usó la familia de Willie?', gloss:'What word did Willie\'s family use?', options:['«borracho»','«intoxicado»','«inconsciente»','«sobredosis»'], answer:1, explain:'La familia dijo que Willie estaba <strong>«intoxicado»</strong>.' },
+  { q:'En español, «intoxicado» quiere decir…', gloss:'In Spanish, "intoxicado" means…', options:['drunk','sick from something eaten or taken (poisoned)','very tired','unconscious'], answer:1, explain:'<em>Intoxicado</em> = poisoned, sick from food, a medicine or another substance. Drunk = <em>borracho</em>.' },
+  { q:'¿Qué entendió el personal del hospital?', gloss:'What did the hospital staff understand?', options:['Que Willie tenía una hemorragia.','Que Willie estaba borracho o con drogas.','Que Willie comió algo malo.','Que Willie estaba embarazado.'], answer:1, explain:'They heard the English false friend <em>intoxicated</em> and thought of an overdose.' },
+  { q:'¿Qué problema tenía Willie en realidad?', gloss:'What problem did Willie really have?', options:['una sobredosis','una infección','una hemorragia en el cerebro','una neumonía'], answer:2, explain:'Tenía una <strong>hemorragia en el cerebro</strong>, y pasaron más de dos días sin llamar al neurocirujano.' },
+  { q:'Cierto o falso: El caso muestra por qué los hospitales necesitan intérpretes calificados.', gloss:'True or false: The case shows why hospitals need qualified interpreters.', options:CF, answer:0, explain:'Cierto. There was no professional interpreter, and one false friend changed the diagnosis.' }
+];
+var l2Data = [
+  { q:'¿Cuántos años tiene doña Marta?', gloss:'How old is Doña Marta?', options:['57','67','76','77'], answer:1, explain:'Tiene <strong>67</strong> años.' },
+  { q:'¿Qué condiciones tiene doña Marta desde antes?', gloss:'Which conditions did she already have?', options:['asma y artritis','diabetes y la presión alta','cáncer y neumonía','colesterol bajo'], answer:1, explain:'Tiene <strong>diabetes</strong> y <strong>la presión alta</strong> (hipertensión), y toma metformina.' },
+  { q:'¿Qué pruebas le van a hacer?', gloss:'What tests are they going to do?', options:['un ultrasonido','un análisis de sangre y una radiografía del pecho','una operación','una vacuna'], answer:1, explain:'«Le vamos a hacer un análisis de sangre y una radiografía del pecho.»' },
+  { q:'¿Por qué la médica no le da penicilina?', gloss:'Why doesn\'t the doctor give her penicillin?', options:['Porque es muy cara.','Porque es alérgica a la penicilina.','Porque no tiene receta.','Porque tiene neumonía.'], answer:1, explain:'Doña Marta es <strong>alérgica a la penicilina</strong>, so she gets another antibiotic.' }
+];
+var quizData = [
+  { q:'«La presión arterial» es…', gloss:'"La presión arterial" is…', options:['heart rate','blood pressure','blood sugar','cholesterol'], answer:1, explain:'<strong>La presión arterial</strong> = blood pressure.' },
+  { q:'Un paciente dice: «Estoy constipado». ¿Qué le pasa?', gloss:'A patient says "Estoy constipado." What\'s wrong?', options:['He is constipated.','He has a cold / is stuffed up.','He is pregnant.','He is embarrassed.'], answer:1, explain:'False friend! <em>Constipado</em> = has a cold. Constipated = <em>estreñido</em>.' },
+  { q:'«Embarazada» significa…', gloss:'"Embarazada" means…', options:['embarrassed','pregnant','tired','nauseous'], answer:1, explain:'<strong>Embarazada</strong> = pregnant. Embarrassed = <em>avergonzada</em>.' },
+  { q:'La especialista de la piel es…', gloss:'The skin specialist is…', options:['la cardióloga','la dermatóloga','la neuróloga','la oncóloga'], answer:1, explain:'Skin → <strong>la dermatología</strong> → la dermatóloga.' },
+  { q:'El especialista de los niños es…', gloss:'The children\'s specialist is…', options:['el pediatrólogo','el pediatra','el pedíatro','el niñólogo'], answer:1, explain:'Exception: <strong>el / la pediatra</strong> (like <em>psiquiatra</em>).' },
+  { q:'«La presión alta» en la historia clínica es…', gloss:'"La presión alta" in the medical chart is…', options:['la hipotensión','la hipertensión','la diabetes','el infarto'], answer:1, explain:'Patient word: <em>la presión alta</em> → clinical term: <strong>la hipertensión</strong>.' },
+  { q:'¿Cuál es la sílaba tónica de «cardiología»?', gloss:'Which is the stressed syllable of "cardiología"?', options:['CAR','DIO','LO','GÍ'], answer:3, explain:'car·dio·lo·<strong>GÍ</strong>·a: the accent mark on í breaks the vowels.' },
+  { q:'«El éxito» significa…', gloss:'"El éxito" means…', options:['the exit','success','the exam','the emergency'], answer:1, explain:'<strong>El éxito</strong> = success. Exit = <em>la salida</em>.' },
+  { q:'¿Qué artículo lleva «síntoma»?', gloss:'Which article goes with "síntoma"?', options:['la','el','las','los dos'], answer:1, explain:'<strong>El síntoma</strong>: many Greek words in -ma are masculine (el problema, el sistema).' },
+  { q:'Usted quiere decir: "You need to see the cardiologist."', gloss:'Use the terminology in a sentence.', options:['Necesita ver al cardiólogo.','Tiene cardiología.','Toma el cardiólogo.','Es cardiología.'], answer:0, explain:'<strong>Necesita ver a + especialista</strong>: a + el = al.' }
+];
+var podData = [
+  { q:'«El ultrasonido» es…', gloss:'"El ultrasonido" is…', options:['the uterus','the ultrasound','the delivery','the due date'], answer:1, explain:'<strong>El ultrasonido</strong> (also <em>la ecografía</em>) = ultrasound.' },
+  { q:'«¿Cuándo fue su última regla?» significa…', gloss:'This question means…', options:['When is your next appointment?','When was your last period?','How many weeks are you?','When is your due date?'], answer:1, explain:'<em>La regla</em> = period. <em>¿Cuándo fue…?</em> = When was…?' },
+  { q:'Para saber cuánto tiempo tiene de embarazo, usted pregunta…', gloss:'To find out how far along she is, you ask…', options:['¿Está embarazada?','¿Cuántas semanas tiene?','¿Es su primer embarazo?','¿Toma vitaminas?'], answer:1, explain:'<strong>¿Cuántas semanas tiene?</strong>' },
+  { q:'«La cita prenatal» es…', gloss:'"La cita prenatal" is…', options:['the birth','a prenatal appointment','a prescription','a C-section'], answer:1, explain:'<strong>La cita prenatal</strong> = prenatal appointment.' },
+  { q:'Según la OMS, ¿cuántos partos en Latinoamérica y el Caribe son por cesárea?', gloss:'According to WHO, how many births in Latin America and the Caribbean are by C-section?', options:['1 de cada 10','2 de cada 10','cerca de 4 de cada 10','9 de cada 10'], answer:2, explain:'Cerca de <strong>4 de cada 10</strong> (43 %), según la OMS (2021).' },
+  { q:'¿En qué países ya hay más cesáreas que partos vaginales?', gloss:'In which countries are there now more C-sections than vaginal births?', options:['México y Guatemala','Brasil y la República Dominicana','Chile y Perú','Cuba y Colombia'], answer:1, explain:'<strong>Brasil y la República Dominicana</strong> (OMS, 2021).' }
+];
+var MC_KEYS = { l1:l1Data, l2:l2Data, quiz:quizData, pod:podData };
+function checkMCset(key, rsId){
+  var data = MC_KEYS[key], correct = 0;
+  data.forEach(function(_, i){ if(revealMC(key, i)) correct++; });
+  setMsg(rsId, correct===data.length, correct+' / '+data.length+' correctas.'+(correct===data.length?' ¡Excelente! ✓':' Lea las explicaciones.'));
+  updateCompletion();
+}
+function resetMCset(key, rsId){ resetMC(key); var m=document.getElementById(rsId); m.className='res-msg'; m.textContent=''; updateCompletion(); }
+function mcCorrect(key){ var c=0; MC_KEYS[key].forEach(function(it, i){ if(quizState[key] && quizState[key][i]===it.answer) c++; }); return c; }
+function mcAnswered(key){ return MC_KEYS[key].map(function(_, i){ return !!(quizState[key] && quizState[key][i]!==null); }); }
+
+/* ── Juego 1: sort ── */
+var SORT_BINS = ['Cognado','Falso amigo'];
+var SORT_SUB = ['same meaning in English','different meaning'];
+var SORT_ITEMS = [
+  ['la infección','Cognado'],['la farmacia','Cognado'],['el diagnóstico','Cognado'],['la terapia','Cognado'],['el colesterol','Cognado'],['la vacuna','Cognado'],
+  ['embarazada','Falso amigo'],['constipado','Falso amigo'],['el éxito','Falso amigo'],['intoxicado','Falso amigo'],['la molestia','Falso amigo'],['actualmente','Falso amigo']
+];
+var sortPlace = {}, sortSel = null;
+function buildSort(){
+  sortPlace = {}; sortSel = null;
+  var order = shuffled(SORT_ITEMS.length);
+  document.getElementById('sortPool').innerHTML = order.map(function(i){ return '<button type="button" class="sort-card" id="sc'+i+'" onclick="pickSort('+i+')">'+SORT_ITEMS[i][0]+'</button>'; }).join('');
+  document.getElementById('sortBins').innerHTML = SORT_BINS.map(function(b, k){ return '<div class="sort-bin" id="sb'+k+'" role="button" tabindex="0" onclick="dropSort('+k+')"><h5>'+b+'<small>'+SORT_SUB[k]+'</small></h5></div>'; }).join('');
+  var m=document.getElementById('rsSort'); m.textContent=''; m.className='res-msg';
+  updateCompletion();
+}
+function pickSort(i){
+  var card = document.getElementById('sc'+i);
+  if(sortPlace[i] !== undefined){ delete sortPlace[i]; card.classList.remove('ok','ng','sel','placed'); document.getElementById('sortPool').appendChild(card); sortSel=null; updateCompletion(); return; }
+  document.querySelectorAll('.sort-card.sel').forEach(function(c){ c.classList.remove('sel'); });
+  if(sortSel===i){ sortSel=null; return; }
+  sortSel = i; card.classList.add('sel');
+}
+function dropSort(k){
+  if(sortSel===null) return;
+  var card = document.getElementById('sc'+sortSel);
+  card.classList.remove('sel'); sortPlace[sortSel] = k;
+  document.getElementById('sb'+k).appendChild(card); sortSel = null; updateCompletion();
+}
+function sortCorrect(){ var c=0; SORT_ITEMS.forEach(function(it, i){ if(sortPlace[i]!==undefined && SORT_BINS[sortPlace[i]]===it[1]) c++; }); return c; }
+function checkSort(){
+  var placed = Object.keys(sortPlace).length;
+  SORT_ITEMS.forEach(function(it, i){ var c=document.getElementById('sc'+i); c.classList.remove('ok','ng'); if(sortPlace[i]!==undefined) c.classList.add(SORT_BINS[sortPlace[i]]===it[1]?'ok':'ng'); });
+  var c = sortCorrect();
+  setMsg('rsSort', c===SORT_ITEMS.length, c+' / '+SORT_ITEMS.length+' correctas.'+(placed<SORT_ITEMS.length?' Place every word.':(c===SORT_ITEMS.length?' ¡Perfecto! ✓':' Tap the red words to try again.')));
+  updateCompletion();
+}
+
+/* ── Juego 2: stressed syllable ── */
+var STRESS = [
+  [['car','dio','lo','gí','a'],3,'cardiology'],
+  [['ra','dio','gra','fí','a'],3,'X-ray'],
+  [['a','ná','li','sis'],1,'analysis / test'],
+  [['dia','be','tes'],1,'diabetes'],
+  [['hi','per','ten','sión'],3,'hypertension'],
+  [['co','les','te','rol'],3,'cholesterol'],
+  [['sín','to','ma'],0,'symptom'],
+  [['diag','nós','ti','co'],1,'diagnosis'],
+  [['neu','mo','ní','a'],2,'pneumonia'],
+  [['em','ba','ra','za','da'],3,'pregnant'],
+  [['es','tó','ma','go'],1,'stomach'],
+  [['pe','dia','tra'],1,'pediatrician']
+];
+var stressAns = [];
+function plain(s){ return s.normalize('NFD').replace(/[̀-ͯ]/g,''); }
+function buildStress(){
+  stressAns = STRESS.map(function(){ return null; });
+  document.getElementById('stressCont').innerHTML = STRESS.map(function(w, i){
+    var b = w[0].map(function(s, k){ return '<button type="button" class="st-btn" id="st'+i+'_'+k+'" onclick="pickStress('+i+','+k+')">'+plain(s)+'</button>'; }).join('');
+    return '<div class="st-row" id="str'+i+'"><span class="st-num">'+(i+1)+'.</span><span class="st-syl">'+b+'</span><span class="st-en" id="sten'+i+'">'+w[2]+'</span></div>';
+  }).join('');
+  var m=document.getElementById('rsStress'); m.textContent=''; m.className='res-msg';
+  updateCompletion();
+}
+function pickStress(i, k){
+  if(stressAns[i]!==null) return;
+  var w = STRESS[i]; stressAns[i] = k;
+  w[0].forEach(function(_, j){ var b=document.getElementById('st'+i+'_'+j); b.disabled=true; b.textContent = w[0][j]; if(j===w[1]) b.classList.add('is-correct'); else if(j===k) b.classList.add('is-wrong'); });
+  document.getElementById('str'+i).classList.add(k===w[1]?'ok':'ng');
+  document.getElementById('sten'+i).textContent = w[0].join('') + ' · ' + w[2];
+  speak(w[0].join(''));
+  var done = stressAns.filter(function(x){ return x!==null; }).length;
+  if(done===STRESS.length){ var c=stressCorrect(); setMsg('rsStress', c===STRESS.length, c+' / '+STRESS.length+' correctas.'+(c===STRESS.length?' ¡Perfecto! ✓':' Review G5 and try again.')); }
+  updateCompletion();
+}
+function stressCorrect(){ var c=0; STRESS.forEach(function(w, i){ if(stressAns[i]===w[1]) c++; }); return c; }
+
+/* ── Matching, short answer, game ── */
+var matchData = [
+  {es:'la presión arterial', en:'blood pressure'},
+  {es:'el infarto', en:'heart attack'},
+  {es:'la neumonía', en:'pneumonia'},
+  {es:'el diagnóstico', en:'diagnosis'},
+  {es:'el tratamiento', en:'treatment'},
+  {es:'los síntomas', en:'symptoms'},
+  {es:'estreñido', en:'constipated'},
+  {es:'embarazada', en:'pregnant'},
+  {es:'la salida', en:'exit'},
+  {es:'la receta', en:'prescription'}
+];
+var shortData = [
+  { q:'Diga que el paciente tiene la presión alta.', gloss:'Say that the patient has high blood pressure.', all:['tiene'], any:['presion','hipertension'], minW:3, hint:'Usa «Tiene la presión alta» o «Tiene hipertensión».' },
+  { q:'Diga que la paciente toma medicina para la diabetes.', gloss:'Say that the patient takes medicine for diabetes.', all:['toma','diabetes'], any:['medicina','medicamento','metformina'], minW:4, hint:'Usa «Toma medicina para la diabetes».' },
+  { q:'Diga que necesita ver a la cardióloga.', gloss:'Say that she needs to see the cardiologist.', all:['necesita','ver'], any:['cardiologa','cardiologo'], minW:4, hint:'Usa «Necesita ver a la cardióloga».' },
+  { q:'Pregúntele si tiene antecedentes de diabetes en la familia.', gloss:'Ask if there is a family history of diabetes.', all:['antecedentes','diabetes'], any:['familia'], minW:5, hint:'Usa «¿Tiene antecedentes de diabetes en la familia?».' },
+  { q:'Explíquele que le van a hacer un análisis de sangre.', gloss:'Explain that you are going to do a blood test.', all:['analisis','sangre'], any:['vamos','va','voy'], minW:5, hint:'Usa «Le vamos a hacer un análisis de sangre».' },
+  { q:'Pregúntele a una paciente si está embarazada.', gloss:'Ask a patient if she is pregnant.', all:['esta','embarazada'], minW:2, hint:'Usa «¿Está embarazada?» (embarazada = pregnant).' }
+];
+var gameData = [
+  {n:'❤ el corazón', a:'el cardiólogo', o:['el cardiólogo','el dermatólogo','el neurólogo']},
+  {n:'la piel', a:'la dermatóloga', o:['la ginecóloga','la dermatóloga','la oncóloga']},
+  {n:'un niño de 3 años', a:'la pediatra', o:['la psiquiatra','la pediatra','la radióloga']},
+  {n:'el cáncer', a:'el oncólogo', o:['el oncólogo','el oftalmólogo','el cardiólogo']},
+  {n:'migrañas y los nervios', a:'la neuróloga', o:['la neuróloga','la dermatóloga','la obstetra']},
+  {n:'un embarazo', a:'la obstetra', o:['la pediatra','la obstetra','la oncóloga']},
+  {n:'la depresión', a:'el psiquiatra', o:['el pediatra','el psiquiatra','el radiólogo']},
+  {n:'leer una radiografía', a:'la radióloga', o:['la radióloga','la cardióloga','la ginecóloga']},
+  {n:'los ojos', a:'el oftalmólogo', o:['el oncólogo','el ortopedista','el oftalmólogo']},
+  {n:'el estómago', a:'la gastroenteróloga', o:['la gastroenteróloga','la ginecóloga','la neuróloga']},
+  {n:'una fractura de tobillo', a:'el ortopedista', o:['el ortopedista','el oftalmólogo','el psiquiatra']},
+  {n:'la presión alta y el colesterol', a:'la cardióloga', o:['la dermatóloga','la cardióloga','la pediatra']}
+];
+
+/* ── Pronunciation game data ── */
+var PR_WORDS = [
+  { es:'diabetes', en:'diabetes', level:1, tip:'Four syllables, pure vowels: di-a-BE-tes. Never «die-a-beet-ees».' },
+  { es:'cardiología', en:'cardiology', level:1, tip:'car-dio-lo-GÍ-a: the accent breaks the i + a. gí sounds like a strong h.' },
+  { es:'radiografía', en:'X-ray', level:1, tip:'An r at the start of a word is trilled: rrra-dio-gra-FÍ-a.' },
+  { es:'hipertensión', en:'hypertension', level:1, tip:'The h is silent: «ipertensión». Stress the end: -SIÓN.' },
+  { es:'colesterol', en:'cholesterol', level:1, tip:'No «ch» sound: co-les-te-ROL, stress on the last syllable.' },
+  { es:'análisis', en:'analysis / test', level:1, tip:'a-NÁ-li-sis: stress the second syllable.' },
+  { es:'neumonía', en:'pneumonia', level:1, tip:'No p in Spanish: neu-mo-NÍ-a.' },
+  { es:'ginecología', en:'gynecology', level:1, tip:'gi sounds like a strong h: «jinecología».' },
+  { es:'embarazada', en:'pregnant', level:1, tip:'z = s in Latin America: em-ba-ra-SA-da. False friend: not embarrassed!' },
+  { es:'estreñido', en:'constipated', level:1, tip:'ñ sounds like ny in «canyon»: es-tre-ÑI-do.' },
+  { es:'la presión arterial', en:'blood pressure', level:2, tip:'Link the words: la-pre-sió-nar-te-rial.' },
+  { es:'un análisis de sangre', en:'a blood test', level:2, tip:'Link un + análisis: «u-na-ná-li-sis».' },
+  { es:'¿Está embarazada?', en:'Are you pregnant?', level:2, tip:'Stress es-TÁ and let your voice rise at the end.' },
+  { es:'¿Cuándo fue su última regla?', en:'When was your last period?', level:2, tip:'regla starts with a trilled r: «rrregla».' },
+  { es:'Tiene la presión arterial alta.', en:'Your blood pressure is high.', level:3 },
+  { es:'Necesita ver al cardiólogo.', en:'You need to see the cardiologist.', level:3 }
+];
+var PR_PASS = 80, PR_LANG = 'es-MX', PR_KEY = 'spsccSpan199_cap7_pron_v1';
+
+/* ── Phonetic normalization (Spanish spelling → sounds) ── */
+function prPhon(s){
+  s = (s||'').toLowerCase().replace(/ñ/g,'N').normalize('NFD').replace(/[̀-ͯ]/g,'');
+  s = s.replace(/[^a-zN ]+/g,' ').replace(/\s+/g,' ').trim();
+  s = s.split(' ').map(function(w){
+    w = w.replace(/^r/,'R').replace(/rr/g,'R').replace(/ch/g,'C').replace(/ll/g,'y').replace(/qu/g,'k')
+         .replace(/gu([ei])/g,'g$1').replace(/g([ei])/g,'j$1').replace(/c([ei])/g,'s$1').replace(/c/g,'k')
+         .replace(/z/g,'s').replace(/v/g,'b').replace(/h/g,'').replace(/w/g,'u').replace(/x/g,'ks').replace(/y$/,'i');
+    return w;
+  });
+  return s;
+}
+function prLev(a, b){
+  var m = a.length, n = b.length, d = [], i, j;
+  for(i=0;i<=m;i++){ d[i]=[i]; }
+  for(j=0;j<=n;j++){ d[0][j]=j; }
+  for(i=1;i<=m;i++) for(j=1;j<=n;j++){
+    d[i][j] = Math.min(d[i-1][j]+1, d[i][j-1]+1, d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+  }
+  return d[m][n];
+}
+var PR_STRICT = 1.5;       // each wrong sound costs 1.5x its share: one wrong sound in a short word does not pass
+function prSim(a, b){ if(!a.length && !b.length) return 1; return Math.max(0, 1 - PR_STRICT*prLev(a, b)/Math.max(a.length, b.length)); }
+/* recognizers often write numbers as digits: turn them back into Spanish words */
+function prNumEs(n){
+  var u=['cero','uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','once','doce','trece','catorce','quince','dieciséis','diecisiete','dieciocho','diecinueve',
+    'veinte','veintiuno','veintidós','veintitrés','veinticuatro','veinticinco','veintiséis','veintisiete','veintiocho','veintinueve'];
+  var t={3:'treinta',4:'cuarenta',5:'cincuenta',6:'sesenta',7:'setenta',8:'ochenta',9:'noventa'};
+  var h={1:'ciento',2:'doscientos',3:'trescientos',4:'cuatrocientos',5:'quinientos',6:'seiscientos',7:'setecientos',8:'ochocientos',9:'novecientos'};
+  if(n<30) return u[n];
+  if(n<100) return t[Math.floor(n/10)] + (n%10 ? ' y '+u[n%10] : '');
+  if(n===100) return 'cien';
+  if(n<1000) return h[Math.floor(n/100)] + (n%100 ? ' '+prNumEs(n%100) : '');
+  return String(n);
+}
+function prDigits(s){ return (s||'').replace(/\d+/g, function(d){ return ' '+prNumEs(parseInt(d,10))+' '; }); }
+/* score one heard transcript against the target (0 to 100) */
+function prScoreOf(target, heard){
+  var t = prPhon(target), h = prPhon(prDigits(heard));
+  if(!h.length) return 0;
+  var full = prSim(t.join(''), h.join(''));
+  // allow the recognizer to add filler words around a single target word
+  var best = 0;
+  if(t.length===1){ h.forEach(function(w){ best = Math.max(best, prSim(t[0], w)); }); best -= (h.length>1?0.05:0); }
+  return Math.round(Math.max(full, best, 0)*100);
+}
+/* which target words were heard */
+function prWordHits(target, heard){
+  var h = prPhon(prDigits(heard)), tw = (target||'').split(/\s+/);
+  return tw.map(function(w){ var p = prPhon(w).join(''); return { w:w, hit: h.some(function(x){ return prSim(p, x) >= 0.8; }) }; });
+}
+
+/* ── State ── */
+var prIdx = 0, prState = [], prRec = null, prListening = false, prVoice = null;
+function prInit(){
+  prState = PR_WORDS.map(function(){ return { best:0, tries:0, passed:false, heard:'' }; });
+  try{ var st = JSON.parse(localStorage.getItem(PR_KEY)||'null'); if(st && st.n===PR_WORDS.length){ prState = st.s; prIdx = st.i; } }catch(e){}
+  prDots(); prShow();
+}
+function prSave(){ try{ localStorage.setItem(PR_KEY, JSON.stringify({ n:PR_WORDS.length, s:prState, i:prIdx })); }catch(e){} }
+function prPoints(){ return prState.reduce(function(a, s){ return a + (s.passed ? Math.max(10, 100 - (s.tries-1)*15) : 0); }, 0); }
+function prStreak(){ var k=0; for(var i=0;i<prState.length;i++){ if(prState[i].passed && prState[i].tries===1) k++; else if(prState[i].passed) k=0; } return k; }
+function prStars(b){ return b>=97 ? '⭐⭐⭐' : b>=90 ? '⭐⭐' : b>=PR_PASS ? '⭐' : '—'; }
+function prDots(){
+  document.getElementById('prDots').innerHTML = PR_WORDS.map(function(_, i){
+    return '<span class="pr-dot '+(prState[i].passed?'done':(i===prIdx?'cur':''))+'" title="'+(i+1)+'"></span>';
+  }).join('');
+}
+function prShow(){
+  if(prIdx >= PR_WORDS.length){ return prFinish(); }
+  var w = PR_WORDS[prIdx], st = prState[prIdx];
+  document.getElementById('prCard').style.display = '';
+  document.getElementById('prDone').classList.remove('show');
+  document.getElementById('prWord').textContent = w.es;
+  document.getElementById('prEn').textContent = w.en || '';
+  var tip = document.getElementById('prTip');
+  if(w.tip){ tip.style.display='inline-block'; tip.innerHTML = '💡 '+w.tip; } else tip.style.display='none';
+  document.getElementById('prNum').textContent = (prIdx+1)+'/'+PR_WORDS.length;
+  document.getElementById('prLevel').textContent = ['','Nivel 1 · Palabras','Nivel 2 · Frases','Nivel 3 · Oraciones'][w.level||1];
+  document.getElementById('prTries').textContent = st.tries;
+  document.getElementById('prPts').textContent = prPoints();
+  document.getElementById('prStreak').textContent = prStreak();
+  document.getElementById('prNext').disabled = !st.passed;
+  document.getElementById('prResult').classList.remove('show');
+  document.getElementById('prInterim').textContent = st.passed ? '✓ Ya pasaste esta palabra. Puedes practicar otra vez o continuar.' : '';
+  prDots();
+}
+
+/* ── Model audio (browser voice) ── */
+function prPickVoice(){
+  if(!('speechSynthesis' in window)) return;
+  var vs = speechSynthesis.getVoices(), base = PR_LANG.split('-')[0];
+  prVoice = vs.filter(function(v){ return v.lang===PR_LANG; })[0] || vs.filter(function(v){ return (v.lang||'').indexOf(base)===0; })[0] || null;
+}
+if('speechSynthesis' in window){ prPickVoice(); speechSynthesis.onvoiceschanged = prPickVoice; }
+function prSpeak(rate){
+  if(!('speechSynthesis' in window)) return prWarn('Your browser cannot play the model voice. Ask your instructor for the audio.');
+  speechSynthesis.cancel();
+  var u = new SpeechSynthesisUtterance(PR_WORDS[prIdx].es);
+  u.lang = PR_LANG; u.rate = rate || 1; if(prVoice) u.voice = prVoice;
+  speechSynthesis.speak(u);
+}
+
+/* ── Speech recognition ── */
+var PR_SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+function prWarn(html){ var w = document.getElementById('prWarn'); w.innerHTML = '⚠️ '+html; w.classList.add('show'); }
+function prListen(){
+  if(!PR_SR) return prWarn('This browser cannot recognize speech. Please open this page in <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong> or <strong>Safari</strong>.');
+  if(prListening){ try{ prRec.stop(); }catch(e){} return; }
+  if('speechSynthesis' in window) speechSynthesis.cancel();
+  prRec = new PR_SR();
+  prRec.lang = PR_LANG; prRec.interimResults = true; prRec.maxAlternatives = 5; prRec.continuous = false;
+  var finalAlts = [], mic = document.getElementById('prMic'), interim = document.getElementById('prInterim');
+  prRec.onstart = function(){ prListening = true; mic.classList.add('rec'); mic.innerHTML = '⏺ Escuchando… (toca para parar)'; interim.textContent = '🎙 Habla ahora…'; };
+  prRec.onresult = function(e){
+    for(var i=e.resultIndex;i<e.results.length;i++){
+      var r = e.results[i];
+      if(r.isFinal){ for(var k=0;k<r.length;k++) finalAlts.push(r[k].transcript); }
+      else interim.textContent = '🎙 ' + r[0].transcript;
+    }
+  };
+  prRec.onerror = function(e){
+    var msg = { 'not-allowed':'The microphone is blocked. Click the 🔒 icon in the address bar and allow the microphone, then try again.',
+      'service-not-allowed':'The microphone is blocked. Click the 🔒 icon in the address bar and allow the microphone, then try again.',
+      'no-speech':'I did not hear anything. Speak a little louder and closer to the microphone.',
+      'audio-capture':'No microphone was found. Connect a microphone or headset and try again.',
+      'network':'Speech recognition needs an internet connection. Check your connection and try again.' }[e.error];
+    if(msg){ if(e.error==='no-speech') interim.textContent = '🤔 '+msg; else prWarn(msg); }
+  };
+  prRec.onend = function(){
+    prListening = false; mic.classList.remove('rec'); mic.innerHTML = '🎤 Habla';
+    if(finalAlts.length) prGrade(finalAlts); else if(interim.textContent.indexOf('🎙')===0) interim.textContent = '🤔 I did not catch that. Try again.';
+  };
+  try{ prRec.start(); }catch(e){ prWarn('The microphone could not start. Reload the page and try again.'); }
+}
+function prGrade(alts){
+  var w = PR_WORDS[prIdx], st = prState[prIdx], best = -1, bestAlt = '';
+  alts.forEach(function(a){ var s = prScoreOf(w.es, a); if(s > best){ best = s; bestAlt = a; } });
+  st.tries++; st.heard = bestAlt;
+  var ok = best >= PR_PASS;
+  if(best > st.best) st.best = best;
+  if(ok && !st.passed){ st.passed = true; }
+  prSave();
+  document.getElementById('prInterim').textContent = '';
+  var ring = document.getElementById('prRing');
+  ring.style.setProperty('--p', best); ring.style.setProperty('--ring-c', ok ? '#6E8C5F' : (best>=60 ? '#D4A24C' : '#C45D3A'));
+  document.getElementById('prScore').textContent = best+'%';
+  var v = document.getElementById('prVerdict');
+  v.className = 'pr-verdict '+(ok?'ok':'ng');
+  v.textContent = ok ? (best>=97 ? '¡Perfecto! ⭐⭐⭐' : best>=90 ? '¡Excelente! ⭐⭐' : '¡Bien! ⭐ Next word unlocked.') :
+    (best>=60 ? 'Casi… ¡otra vez! You need 80%.' : 'Escucha el modelo y repite. You need 80%.');
+  document.getElementById('prHeard').innerHTML = 'Escuché: <em>«'+bestAlt.replace(/[<>&]/g,'')+'»</em>';
+  document.getElementById('prBest').textContent = st.best+'%';
+  var words = prWordHits(w.es, bestAlt);
+  document.getElementById('prWords').innerHTML = words.length>1 ? words.map(function(x){ return '<span class="'+(x.hit?'hit':'miss')+'">'+(x.hit?'✓ ':'✗ ')+x.w+'</span>'; }).join('') : '';
+  document.getElementById('prResult').classList.add('show');
+  document.getElementById('prNext').disabled = !st.passed;
+  document.getElementById('prTries').textContent = st.tries;
+  document.getElementById('prPts').textContent = prPoints();
+  document.getElementById('prStreak').textContent = prStreak();
+  if(!ok && st.tries>=3 && !st.passed) document.getElementById('prInterim').textContent = '💡 Tip: press 🐢 Despacio, repeat syllable by syllable, then say it at normal speed.';
+  prDots();
+}
+function prNextWord(){ if(!prState[prIdx].passed) return; prIdx++; prSave(); prShow(); }
+function prFinish(){
+  document.getElementById('prCard').style.display = 'none';
+  var avg = Math.round(prState.reduce(function(a, s){ return a + s.best; }, 0) / prState.length);
+  document.getElementById('prFinal').innerHTML = 'Promedio de pronunciación: <strong>'+avg+'%</strong> · Puntos: <strong>'+prPoints()+'</strong> de '+(PR_WORDS.length*100)+'.';
+  document.getElementById('prTable').innerHTML = PR_WORDS.map(function(w, i){ var s = prState[i];
+    return '<tr><td>'+w.es+'</td><td>'+s.best+'%</td><td>'+s.tries+'</td><td class="pr-stars">'+prStars(s.best)+'</td></tr>'; }).join('');
+  document.getElementById('prDone').classList.add('show');
+  document.getElementById('prNum').textContent = PR_WORDS.length+'/'+PR_WORDS.length;
+  prDots();
+}
+function prRestart(){ if(!confirm('Start over? Your scores will be reset. / ¿Empezar de nuevo?')) return; prIdx = 0; prState = PR_WORDS.map(function(){ return { best:0, tries:0, passed:false, heard:'' }; }); prSave(); prShow(); }
+
+
+
+/* ── hooks: pronunciation game updates the chapter progress ── */
+var _prGrade = prGrade; prGrade = function(a){ _prGrade(a); updateCompletion(); };
+var _prNextWord = prNextWord; prNextWord = function(){ _prNextWord(); updateCompletion(); };
+var _prRestart = prRestart; prRestart = function(){ _prRestart(); updateCompletion(); };
+if('speechSynthesis' in window){ window.speechSynthesis.onvoiceschanged = function(){ pickVoice(); prPickVoice(); }; }
+function prPassed(){ return prState.map(function(s){ return !!s.passed; }); }
+
+/* ── Completion ── */
+var BLANK_SETS = [['e1_',8],['e2_',8],['e4_',6]];
+var BLANK_HEADS = ['Ej 1 · Los cognados','Ej 2 · ¿Qué especialista necesita?','Ej 4 · Del paciente a la historia clínica'];
+function idsFilled(prefix, n){ var out=[]; for(var i=1;i<=n;i++) out.push(val(prefix+i).length>0); return out; }
+var completionGroups = [
+  { label:'Nombre', tab:'ov', items:function(){ return [val('studentName').length>0]; } },
+  { label:'Ejercicios', tab:'ej', items:function(){ return idsFilled('e1_',8).concat(idsFilled('e2_',8), selFilled('fa'), idsFilled('e4_',6), shortData.map(function(_, i){ return val('sa'+i).length>0; }), [reportDone()]); } },
+  { label:'Lectura', tab:'lec', items:function(){ return mcAnswered('l1').concat([huntFound===HUNT_N], mcAnswered('l2')); } },
+  { label:'Pronunciación', tab:'pr', items:function(){ return prPassed(); } },
+  { label:'Juegos', tab:'ju', items:function(){ return [Object.keys(sortPlace).length===SORT_ITEMS.length].concat(stressAns.map(function(x){ return x!==null; }), [matchDone], mcAnswered('quiz'), [gFinished]); } },
+  { label:'Pod', tab:'pod', items:function(){ return mcAnswered('pod'); } }
+];
+function completionStats(){ return completionGroups.map(function(g){ var a=g.items(); return { label:g.label, tab:g.tab, done:a.filter(Boolean).length, total:a.length }; }); }
+
+/* ── Live score ── */
+function blanksCorrect(prefix, n){ var c=0; for(var i=1;i<=n;i++){ var el=document.getElementById(prefix+i); if(el && isRight(el)) c++; } return c; }
+function computeScore(){
+  var correct=0, total=0;
+  BLANK_SETS.forEach(function(b){ correct+=blanksCorrect(b[0],b[1]); total+=b[1]; });
+  correct += selCorrect('fa'); total += SELECT_SETS.fa.length;
+  shortData.forEach(function(_, i){ if(val('sa'+i) && gradeShort(i).ok) correct++; }); total += shortData.length;
+  ['l1','l2','quiz','pod'].forEach(function(k){ correct += mcCorrect(k); total += MC_KEYS[k].length; });
+  correct += huntFound; total += HUNT_N;
+  correct += prPassed().filter(Boolean).length; total += PR_WORDS.length;
+  correct += sortCorrect(); total += SORT_ITEMS.length;
+  correct += stressCorrect(); total += STRESS.length;
+  correct += mMatched; total += matchData.length;
+  correct += gScore; total += gameData.length;
+  return { correct:correct, total:total };
+}
+function updateScore(){ var s=computeScore(); var pct=s.total?Math.round(s.correct/s.total*100):0; var el=document.getElementById('completionScore'); if(el) el.textContent='★ '+pct+'% correcto'; }
+function updateCompletion(){
+  if(!quizState['pod'] || !stressAns.length || !prState.length) return;
+  var stats = completionStats(), d=0, t=0;
+  stats.forEach(function(g){ d+=g.done; t+=g.total; });
+  var pct = t ? Math.round(d/t*100) : 0;
+  document.getElementById('completionPct').textContent = pct+'%';
+  document.getElementById('pf').style.width = pct+'%';
+  document.getElementById('completionLegend').innerHTML = stats.map(function(g){ return '<button type="button" class="legend-pill '+(g.done===g.total?'done':'')+'" onclick="jumpTab(\''+g.tab+'\')">'+g.label+' '+g.done+'/'+g.total+'</button>'; }).join('');
+  updateScore();
+}
+function jumpTab(tab){ var btns=document.querySelectorAll('.tab'); for(var i=0;i<btns.length;i++){ if((btns[i].getAttribute('onclick')||'').indexOf("'"+tab+"'")!==-1){ switchTab(tab, btns[i]); return; } } switchTab(tab, null); }
+document.addEventListener('input', updateCompletion);
+document.addEventListener('change', updateCompletion);
+
+/* ── Student report ── */
+function buildReportHtml(name){
+  var stamp = new Date().toLocaleString('en-US',{ year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  var s = computeScore(), scorePct = s.total ? Math.round(s.correct/s.total*100) : 0;
+  var stats = completionStats(), cd=0, ct=0; stats.forEach(function(g){ cd+=g.done; ct+=g.total; });
+  var cpct = ct?Math.round(cd/ct*100):0;
+  var compRows = stats.map(function(g){ return '<li class="'+(g.done===g.total?'checked':'')+'">'+(g.done===g.total?'☑':'☐')+' '+escapeHtml(g.label)+': '+g.done+' / '+g.total+'</li>'; }).join('');
+  var blanks = BLANK_SETS.map(function(b, k){ return collectBlanks(b[0], b[1], BLANK_HEADS[k]); });
+  var bc=0, bt=0; blanks.forEach(function(g){ bc+=g.correct; bt+=g.total; });
+  var faItems = SELECT_SETS.fa.map(function(it, i){ var v=document.getElementById('fa_'+i).value; return { label:it.pre+' ___', value:v, ok:v===it.a, msg: v===it.a?'Correcto.':'Respuesta: '+it.a }; });
+  var saItems = shortData.map(function(x, i){ var v=val('sa'+i), r=gradeShort(i); return { label:x.q, value:v, ok:r.ok, msg:r.msg }; });
+  var used = termsUsed().filter(Boolean).length;
+  var repItem = [{ label:'Informe de don Héctor', value: val('report'), ok: reportDone(), msg: reportWords()+' palabras · '+used+' términos médicos' }];
+  var prItems = PR_WORDS.map(function(w, i){ var st=prState[i]; return { label:w.es, value: st.tries ? (st.best+'% · '+st.tries+' intento(s)') : '', ok: st.passed, msg: st.heard ? 'Escuchó: «'+st.heard+'»' : '' }; });
+  var games = [
+    { label:'¿Cognado o falso amigo?', value: Object.keys(sortPlace).length ? sortCorrect()+' / '+SORT_ITEMS.length : '', ok: sortCorrect()===SORT_ITEMS.length, msg:'' },
+    { label:'¿Dónde está el acento?', value: stressAns.some(function(x){ return x!==null; }) ? stressCorrect()+' / '+STRESS.length : '', ok: stressCorrect()===STRESS.length, msg:'' },
+    { label:'Emparejamiento', value: mMatched ? mMatched+' / '+matchData.length : '', ok: matchDone, msg:'' },
+    { label:'Reto: ¿qué especialista?', value: gFinished ? gScore+' / '+gameData.length : '', ok: gFinished && gScore>=10, msg:'' },
+    { label:'Lectura 2 · términos encontrados', value: huntFound ? huntFound+' / '+HUNT_N+' (errores: '+huntMiss+')' : '', ok: huntFound===HUNT_N, msg:'' }
+  ];
+  function mcBlock(key, title, head){ var items = mcReport(MC_KEYS[key], key); return reportTable(title, mcCorrect(key)+' / '+items.length+' correctas', [{ heading:head, items:items }]); }
+  return '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Reporte Capítulo 7 · '+escapeHtml(name)+'</title><style>'+
+  "body{font-family:Georgia,'Times New Roman',serif;color:#2A2118;max-width:850px;margin:0 auto;padding:40px 32px;line-height:1.6;}"+
+  'header{border-bottom:4px solid #C45D3A;padding-bottom:16px;margin-bottom:28px;} h1{font-size:1.6rem;color:#1B2A4A;margin:0 0 6px;}'+
+  ".meta{font-family:'Courier New',monospace;font-size:0.78rem;color:#6B5D4A;} .meta strong{color:#1B2A4A;}"+
+  '.summary{background:#FBF5EA;border-left:5px solid #D4A24C;padding:14px 18px;margin-bottom:28px;font-size:0.95rem;}'+
+  'h2{font-size:1.1rem;color:#1B2A4A;margin:32px 0 10px;border-left:5px solid #C45D3A;padding-left:12px;}'+
+  "h3{font-size:0.78rem;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#6B5D4A;margin:18px 0 6px;font-weight:normal;}"+
+  ".score{font-family:'Courier New',monospace;font-size:0.72rem;font-weight:normal;color:#6B5D4A;display:block;padding-top:2px;}"+
+  'table{width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:8px;} td{padding:8px 10px;border-bottom:1px solid #EDE2CE;vertical-align:top;}'+
+  "td.num{color:#6B5D4A;font-family:'Courier New',monospace;font-size:0.75rem;} td.note{font-size:0.78rem;color:#6B5D4A;font-style:italic;} td.mark{text-align:center;font-weight:bold;width:26px;}"+
+  'tr.ok{background:#F2F8EE;} tr.ok td.mark{color:#4C7A3C;} tr.bad{background:#FCF0EE;} tr.bad td.mark{color:#A8452A;}'+
+  '.blanktxt{color:#A89A88;} ul.check{list-style:none;padding:0;font-size:0.9rem;} ul.check li{padding:5px 0;border-bottom:1px solid #F2EADB;} ul.check li.checked{color:#4C7A3C;}'+
+  "footer{margin-top:40px;border-top:1px solid #EDE2CE;padding-top:12px;font-family:'Courier New',monospace;font-size:0.68rem;color:#6B5D4A;}"+
+  '@media print{body{padding:0;}h2{page-break-after:avoid;}table{page-break-inside:avoid;}}</style></head><body>'+
+  '<header><h1>Spanish for Healthcare Workers · Capítulo 7</h1><p class="meta"><strong>Estudiante:</strong> '+escapeHtml(name)+' &nbsp;·&nbsp; <strong>Terminología médica</strong> &nbsp;·&nbsp; Generado: '+escapeHtml(stamp)+'</p></header>'+
+  '<div class="summary"><strong>Puntuación:</strong> '+s.correct+' / '+s.total+' correctas (<strong>'+scorePct+'%</strong>) · Página completada al <strong>'+cpct+'%</strong> ('+cd+' / '+ct+' elementos) · <strong>Pronunciación:</strong> '+prPassed().filter(Boolean).length+' / '+PR_WORDS.length+' términos aprobados (80% o más), '+prPoints()+' puntos</div>'+
+  '<h2>Progreso por sección</h2><ul class="check">'+compRows+'</ul>'+
+  reportTable('Ejercicios (fill-in)', bc+' / '+bt+' correctas', blanks)+
+  reportTable('Ejercicio 3 · Falsos amigos', selCorrect('fa')+' / '+SELECT_SETS.fa.length+' correctas', [{ heading:'¿Amigo o falso amigo?', items:faItems }])+
+  reportTable('Ejercicio 5 · Respuesta corta', saItems.filter(function(x){ return x.ok; }).length+' / '+saItems.length+' válidas', [{ heading:'Use los términos', items:saItems }])+
+  reportTable('Ejercicio 6 · Escritura', reportDone()?'Completo':'Sin terminar', [{ heading:'Informe del paciente', items:repItem }])+
+  mcBlock('l1','Lectura 1 · «Intoxicado»','Comprensión')+
+  mcBlock('l2','Lectura 2 · La consulta de doña Marta','Comprensión')+
+  reportTable('🎤 Pronunciación', prPassed().filter(Boolean).length+' / '+PR_WORDS.length+' aprobados', [{ heading:'Habla y avanza', items:prItems }])+
+  reportTable('Juegos', '', [{ heading:'Actividades', items:games }])+
+  mcBlock('quiz','Juego 4 · Opción múltiple','Quiz')+
+  mcBlock('pod','★ Pod de especialidad · OB/GYN','Comprueba')+
+  '<footer>South Puget Sound Community College · Spanish for Healthcare Workers · Capítulo 7 · Para entregar como PDF, abre este archivo e imprime → Guardar como PDF.</footer></body></html>';
+}
+function downloadReport(){
+  var field=document.getElementById('studentName'), name=(field.value||'').trim();
+  if(!name){ field.focus(); field.style.borderColor='#A8452A'; alert('Escribe tu nombre primero. / Please enter your name before downloading the report.'); setTimeout(function(){ field.style.borderColor=''; },2500); return; }
+  var html=buildReportHtml(name); var safe=name.replace(/[^a-z0-9]+/gi,'_').replace(/^_+|_+$/g,'')||'estudiante';
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'}); var url=URL.createObjectURL(blob);
+  var a=document.createElement('a'); a.href=url; a.download='Capitulo7_SpanishHealthcare_'+safe+'.html'; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); },1000);
+}
+
+/* ── Build everything ── */
+buildFlash(vocabTerms, 'fcTerms', '');
+buildFlash(vocabSpec, 'fcSpec', 'conn-card');
+buildFlash(vocabFalse, 'fcFalse', '');
+buildFlash(vocabPod, 'fcPod', 'pod-card');
+buildSelects('fa', 'falseCont');
+updateTerms();
+buildHunt();
+renderDlg(podDialogue, 'dlgPod');
+buildMC(l1Data, 'l1', 'l1Cont');
+buildMC(l2Data, 'l2', 'l2Cont');
+buildMC(quizData, 'quiz', 'quizCont');
+buildMC(podData, 'pod', 'podCont');
+buildSort();
+buildStress();
+buildMatch();
+buildShort();
+startGame();
+if(!PR_SR) prWarn('This browser cannot recognize speech. Please open this page in <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong> or <strong>Safari</strong>.');
+else if(location.protocol==='file:') prWarn('Tip: if the microphone does not start, this page needs to be opened from Canvas or another website (https), not from a downloaded file.');
+prInit();
+updateCompletion();
+</script>
+
+</body>
+</html>
